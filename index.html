@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hero Section</title>
+    <!-- Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <script src="./assets/js/Funil.js"></script>
+    <script src="./assets/js/Contato.js"></script>
+    <script src="./assets/js/Header.js"></script>
+</head>
+<body>
+    <header id="main-header" class="header header-animated bg-transparent">
+        <div class="container-custom py-4 flex justify-between items-center">
+            <a href="#" class="flex items-center">
+                <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-gold mr-2" style="color: var(--color-gold);">
+                    <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.2 5-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                    <path d="M5 3v4"></path>
+                    <path d="M19 17v4"></path>
+                    <path d="M3 5h4"></path>
+                    <path d="M17 19h4"></path>
+                </svg>
+                <span class="font-playfair font-bold text-xl text-gold">IFNC Business</span>
+            </a>
+
+            <!-- Desktop Navigation -->
+            <nav class="hidden md:flex">
+                <ul class="flex space-x-8">
+                    <li>
+                        <a href="#início" class="text-darkBrown hover:text-gold transition-all">Início</a>
+                    </li>
+                    <li>
+                        <a href="#sobre" class="text-darkBrown hover:text-gold transition-all">Sobre</a>
+                    </li>
+                    <li>
+                        <a href="#portfólio" class="text-darkBrown hover:text-gold transition-all">Portfólio</a>
+                    </li>
+                    <li>
+                        <a href="#serviços" class="text-darkBrown hover:text-gold transition-all">Serviços</a>
+                    </li>
+                    <li>
+                        <a href="#contato" class="text-darkBrown hover:text-gold transition-all">Contato</a>
+                    </li>
+                </ul>
+            </nav>
+
+            <!-- Mobile Menu Button -->
+            <button 
+                id="menu-toggle" 
+                class="md:hidden text-gold"
+                aria-label="Toggle menu"
+            >
+                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" x2="20" y1="12" y2="12"></line>
+                    <line x1="4" x2="20" y1="6" y2="6"></line>
+                    <line x1="4" x2="20" y1="18" y2="18"></line>
+                </svg>
+                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
+                    <path d="M18 6 6 18"></path>
+                    <path d="m6 6 12 12"></path>
+                </svg>
+            </button>
+        </div>
+
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="md:hidden mobile-menu bg-darkBrown bg-opacity-95">
+            <ul class="container-custom py-4 space-y-4">
+                <li>
+                    <a href="#início" class="block text-snowWhite hover:text-gold transition-all">Início</a>
+                </li>
+                <li>
+                    <a href="#sobre" class="block text-snowWhite hover:text-gold transition-all">Sobre</a>
+                </li>
+                <li>
+                    <a href="#portfólio" class="block text-snowWhite hover:text-gold transition-all">Portfólio</a>
+                </li>
+                <li>
+                    <a href="#serviços" class="block text-snowWhite hover:text-gold transition-all">Serviços</a>
+                </li>
+                <li>
+                    <a href="#contato" class="block text-snowWhite hover:text-gold transition-all">Contato</a>
+                </li>
+            </ul>
+        </div>
+    </header>
+    <section id="início" class="min-h-screen flex items-center justify-content-center">
+        <div class="container-custom">
+            <div class="grid">
+                <div class="fade-in-left order-lg-1">
+                    <h1 class="font-playfair">
+                        <span class="block mb-4">Não somos apenas uma</span>
+                        <span class="text-gold">Agência de Marketing.</span>
+                        <span class="block mt-4">Somos transformação com empatia.</span>
+                    </h1>
+                    
+                    <p class="text-neutralGray">
+                        Empatia é a chave. Escutamos você e cocriamos soluções com propósito.
+                    </p>
+                    
+                    <a href="#sobre" class="btn-primary">
+                        Descubra nosso diferencial
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-5 w-5">
+                            <path d="M5 12h14"></path>
+                            <path d="m12 5 7 7-7 7"></path>
+                        </svg>
+                    </a>
+                </div>
+                
+                <div class="fade-in-right order-lg-2 flex justify-center">
+                    <div class="relative">
+                        <div class="absolute inset-0 bg-gold rounded-full opacity-20 blur-2xl"></div>
+                        <img 
+                            src="public/1.jpg" 
+                            alt="IFNC Business Team Collaboration" 
+                            class="rounded-2xl shadow-xl relative z-10 max-w-md mx-auto"
+                        />
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="sobre" class="py-20 bg-snowWhite">
+        <div class="container-custom">
+            <div class="text-center mb-16 fade-in-up" style="animation-delay: 0s;">
+                <h2 class="section-title">Sobre Nós</h2>
+                <p class="section-subtitle">
+                    Somos uma equipe apaixonada por criar conexões significativas entre marcas e pessoas.
+                    Nosso diferencial está na forma como abordamos cada projeto: com empatia, dedicação e foco em resultados.
+                </p>
+            </div>
+
+            <div class="grid grid-about gap-8">
+                <!-- Card 1 -->
+                <div class="card flex flex-col items-center text-center p-8 fade-in-up" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-gold bg-opacity-10 rounded-full mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-gold" style="color: var(--color-gold);">
+                            <path d="M19 14c1.49-1.46 3-3.21 3-5.5A5.5 5.5 0 0 0 16.5 3c-1.76 0-3 .5-4.5 2-1.5-1.5-2.74-2-4.5-2A5.5 5.5 0 0 0 2 8.5c0 2.3 1.5 4.05 3 5.5l7 7Z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Não apenas uma Agência de MKT</h3>
+                    <p class="text-gray-600">Vamos além das expectativas tradicionais, entregando soluções que realmente importam para o seu negócio e seus clientes.</p>
+                </div>
+                
+                <!-- Card 2 -->
+                <div class="card flex flex-col items-center text-center p-8 fade-in-up" style="animation-delay: 0.4s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-gold bg-opacity-10 rounded-full mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-gold" style="color: var(--color-gold);">
+                            <path d="M9.5 2A2.5 2.5 0 0 1 12 4.5v15a2.5 2.5 0 0 1-4.96.44 2.5 2.5 0 0 1-2.96-3.08 3 3 0 0 1-.34-5.58 2.5 2.5 0 0 1 1.32-4.24 2.5 2.5 0 0 1 4.44-2.04Z"></path>
+                            <path d="M14.5 2A2.5 2.5 0 0 0 12 4.5v15a2.5 2.5 0 0 0 4.96.44 2.5 2.5 0 0 0 2.96-3.08 3 3 0 0 0 .34-5.58 2.5 2.5 0 0 0-1.32-4.24 2.5 2.5 0 0 0-4.44-2.04Z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Empatia é a Chave</h3>
+                    <p class="text-gray-600">Colocamos a empatia no centro de tudo o que fazemos, garantindo que cada solução seja personalizada e significativa.</p>
+                </div>
+                
+                <!-- Card 3 -->
+                <div class="card flex flex-col items-center text-center p-8 fade-in-up" style="animation-delay: 0.6s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-gold bg-opacity-10 rounded-full mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-gold" style="color: var(--color-gold);">
+                            <path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"></path>
+                            <circle cx="9" cy="7" r="4"></circle>
+                            <path d="M22 21v-2a4 4 0 0 0-3-3.87"></path>
+                            <path d="M16 3.13a4 4 0 0 1 0 7.75"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Crescemos em União</h3>
+                    <p class="text-gray-600">Acreditamos no poder da colaboração. Seu sucesso é nosso sucesso, e trabalhamos juntos para alcançar os melhores resultados.</p>
+                </div>
+                
+                <!-- Card 4 -->
+                <div class="card flex flex-col items-center text-center p-8 fade-in-up" style="animation-delay: 0.8s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-gold bg-opacity-10 rounded-full mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-gold" style="color: var(--color-gold);">
+                            <path d="M23 4v6h-6"></path>
+                            <path d="M1 20v-6h6"></path>
+                            <path d="M3.51 9a9 9 0 0 1 14.85-3.36L23 10M1 14l4.64 4.36A9 9 0 0 0 20.49 15"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-4">Algumas coisas devem mudar</h3>
+                    <p class="text-gray-600">Abraçamos a inovação e a adaptação constante, sempre em busca de novas formas de impulsionar seu negócio e superar desafios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="portfólio" class="py-20 bg-neutralGray">
+        <div class="container-custom">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Marcas Elaboradas</h2>
+                <p class="section-subtitle">
+                    Criamos identidades visuais que capturam a essência de cada negócio,
+                    transmitindo valores e conectando marcas com seu público-alvo.
+                </p>
+            </div>
+
+            <div class="grid grid-about gap-8">
+                <!-- Project 1 -->
+                <div class="group fade-in-up-portfolio" style="animation-delay: 0.1s;">
+                    <div class="overflow-hidden rounded-xl">
+                        <img
+                            src="https://images.pexels.com/photos/6476254/pexels-photo-6476254.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Marca 1"
+                            class="w-full h-64 object-cover transition-transform"
+                        />
+                    </div>
+                    
+                    <div class="project-overlay">
+                        <h3 class="text-xl font-bold text-gold mb-3">Marca 1</h3>
+                        <a
+                            href="https://drive.google.com/file/d/1sCgoBFXarQcrkSb2hz99HEZOW3Javg7M/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center text-snowWhite hover:text-gold transition-colors"
+                        >
+                            Ver Projeto Completo 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 2 -->
+                <div class="group fade-in-up-portfolio" style="animation-delay: 0.2s;">
+                    <div class="overflow-hidden rounded-xl">
+                        <img
+                            src="https://images.pexels.com/photos/6476589/pexels-photo-6476589.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Marca 2"
+                            class="w-full h-64 object-cover transition-transform"
+                        />
+                    </div>
+                    
+                    <div class="project-overlay">
+                        <h3 class="text-xl font-bold text-gold mb-3">Marca 2</h3>
+                        <a
+                            href="https://drive.google.com/file/d/10Fm0SK_aOgmEUsVQQZeC8Z3LQPokPx6b/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center text-snowWhite hover:text-gold transition-colors"
+                        >
+                            Ver Projeto Completo 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 3 -->
+                <div class="group fade-in-up-portfolio" style="animation-delay: 0.3s;">
+                    <div class="overflow-hidden rounded-xl">
+                        <img
+                            src="https://images.pexels.com/photos/6476146/pexels-photo-6476146.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Marca 3"
+                            class="w-full h-64 object-cover transition-transform"
+                        />
+                    </div>
+                    
+                    <div class="project-overlay">
+                        <h3 class="text-xl font-bold text-gold mb-3">Marca 3</h3>
+                        <a
+                            href="https://drive.google.com/file/d/13USNvF4YfbtpmG4H2NBcVa_jM-p7WmKU/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center text-snowWhite hover:text-gold transition-colors"
+                        >
+                            Ver Projeto Completo 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Project 4 -->
+                <div class="group fade-in-up-portfolio" style="animation-delay: 0.4s;">
+                    <div class="overflow-hidden rounded-xl">
+                        <img
+                            src="https://images.pexels.com/photos/6476808/pexels-photo-6476808.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Marca 4"
+                            class="w-full h-64 object-cover transition-transform"
+                        />
+                    </div>
+                    
+                    <div class="project-overlay">
+                        <h3 class="text-xl font-bold text-gold mb-3">Marca 4</h3>
+                        <a
+                            href="https://drive.google.com/file/d/1vRkLcPmqjPGEipggZwPHsFNHx3Uj6KWM/view?usp=sharing"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center text-snowWhite hover:text-gold transition-colors"
+                        >
+                            Ver Projeto Completo 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-snowWhite">
+        <div class="container-custom">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Sites Desenvolvidos</h2>
+                <p class="section-subtitle">
+                    Criamos experiências digitais que combinam design atraente, usabilidade e performance.
+                    Cada projeto é pensado para representar a identidade do cliente e atender às necessidades de seus usuários.
+                </p>
+            </div>
+
+            <div class="grid grid-websites gap-10">
+                <!-- Website Project 1 -->
+                <div class="card overflow-hidden fade-in-up-website" style="animation-delay: 0.2s;">
+                    <div class="h-48 mb-6 overflow-hidden">
+                        <img
+                            src="https://images.pexels.com/photos/1435752/pexels-photo-1435752.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Construsao José"
+                            class="w-full h-full object-cover transition-transform hover:scale-110"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-3">Construsao José</h3>
+                        <p class="text-gray-600 mb-4">Site institucional com sistema de catálogo de produtos e formulário personalizado.</p>
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center text-gold hover:text-darkBrown transition-colors"
+                        >
+                            Visitar site 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Website Project 2 -->
+                <div class="card overflow-hidden fade-in-up-website" style="animation-delay: 0.4s;">
+                    <div class="h-48 mb-6 overflow-hidden">
+                        <img
+                            src="https://images.pexels.com/photos/301926/pexels-photo-301926.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Colégio Objetivo Capela"
+                            class="w-full h-full object-cover transition-transform hover:scale-110"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-3">Colégio Objetivo Capela</h3>
+                        <p class="text-gray-600 mb-4">Portal educacional com área de notícias, galeria de eventos e sistema de matrícula online.</p>
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center text-gold hover:text-darkBrown transition-colors"
+                        >
+                            Visitar site 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Website Project 3 -->
+                <div class="card overflow-hidden fade-in-up-website" style="animation-delay: 0.6s;">
+                    <div class="h-48 mb-6 overflow-hidden">
+                        <img
+                            src="https://images.pexels.com/photos/230544/pexels-photo-230544.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                            alt="Palavra Premium"
+                            class="w-full h-full object-cover transition-transform hover:scale-110"
+                        />
+                    </div>
+                    <div class="p-4">
+                        <h3 class="text-xl font-bold mb-3">Palavra Premium</h3>
+                        <p class="text-gray-600 mb-4">E-commerce com catálogo de produtos, sistema de pagamento e área do cliente.</p>
+                        <a
+                            href="#"
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            class="inline-flex items-center text-gold hover:text-darkBrown transition-colors"
+                        >
+                            Visitar site 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-4 w-4">
+                                <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6"></path>
+                                <polyline points="15 3 21 3 21 9"></polyline>
+                                <line x1="10" y1="14" x2="21" y2="3"></line>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="serviços" class="py-20 bg-neutralGray">
+        <div class="container-custom">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Produção Audiovisual</h2>
+                <p class="section-subtitle">
+                    Transformamos ideias em conteúdo audiovisual de alta qualidade que conecta,
+                    engaja e inspira seu público-alvo.
+                </p>
+            </div>
+
+            <div class="grid grid-about gap-10 mb-16">
+                <!-- Process Step 1 -->
+                <div class="flex flex-col items-center text-center fade-in-up-step" style="animation-delay: 0.2s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-gold bg-opacity-10 rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-gold" style="color: var(--color-gold);">
+                            <path d="m22 8-6 4 6 4V8Z"></path>
+                            <rect x="2" y="6" width="14" height="12" rx="2" ry="2"></rect>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">O que é</h3>
+                    <p class="text-gray-600">Produção multimídia que combina elementos visuais e sonoros para criar conteúdo engajante e memorável.</p>
+                </div>
+                
+                <!-- Process Step 2 -->
+                <div class="flex flex-col items-center text-center fade-in-up-step" style="animation-delay: 0.4s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-gold bg-opacity-10 rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-gold" style="color: var(--color-gold);">
+                            <path d="M9 18V5l12-2v13"></path>
+                            <circle cx="6" cy="18" r="3"></circle>
+                            <circle cx="18" cy="16" r="3"></circle>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Por que fazemos</h3>
+                    <p class="text-gray-600">Para aumentar o engajamento, criar conexões emocionais e alcançar seu público de forma mais efetiva e criativa.</p>
+                </div>
+                
+                <!-- Process Step 3 -->
+                <div class="flex flex-col items-center text-center fade-in-up-step" style="animation-delay: 0.6s;">
+                    <div class="w-16 h-16 flex items-center justify-center bg-gold bg-opacity-10 rounded-full mb-4">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-gold" style="color: var(--color-gold);">
+                            <path d="M12 20h9"></path>
+                            <path d="M16.5 3.5a2.121 2.121 0 0 1 3 3L7 19l-4 1 1-4L16.5 3.5z"></path>
+                        </svg>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Como fazemos</h3>
+                    <p class="text-gray-600">Seguimos um processo meticuloso de planejamento, roteirização, produção e edição para garantir resultados excepcionais.</p>
+                </div>
+            </div>
+
+            <div class="max-w-4xl mx-auto fade-in-up-video">
+                <div class="relative pt-[56.25%] rounded-xl overflow-hidden shadow-xl">
+                    <iframe
+                        class="absolute top-0 left-0 w-full h-full"
+                        src="https://www.youtube.com/embed/dQw4w9WgXcQ"
+                        title="IFNC Business - Produção Audiovisual"
+                        frameborder="0"
+                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                        allowfullscreen
+                    ></iframe>
+                </div>
+                
+                <div class="mt-8 text-center">
+                    <p class="text-lg font-medium text-darkBrown">
+                        Confira mais produções em nossas redes sociais
+                    </p>
+                    <div class="flex justify-center space-x-6 mt-4">
+                        <a href="#" class="text-gold hover:text-darkBrown transition-colors">YouTube</a>
+                        <a href="#" class="text-gold hover:text-darkBrown transition-colors">Instagram</a>
+                        <a href="#" class="text-gold hover:text-darkBrown transition-colors">Facebook</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-snowWhite">
+        <div class="container-custom">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Gestão de Tráfego Pago</h2>
+                <p class="section-subtitle">
+                    Atraia o público certo para o seu negócio com estratégias de tráfego pago 
+                    que maximizam seu investimento e geram resultados mensuráveis.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <!-- Feature 1 -->
+                <div class="card flex fade-in-up-feature" style="animation-delay: 0.15s;">
+                    <div class="mr-4">
+                        <div class="w-12 h-12 flex items-center justify-center bg-gold bg-opacity-10 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-gold" style="color: var(--color-gold);">
+                                <circle cx="12" cy="12" r="10"></circle>
+                                <circle cx="12" cy="12" r="6"></circle>
+                                <circle cx="12" cy="12" r="2"></circle>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">O que é</h3>
+                        <p class="text-gray-600">Estratégia para atrair visitantes qualificados aos seus sites e redes sociais através de anúncios pagos em plataformas como Google, Facebook e Instagram.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 2 -->
+                <div class="card flex fade-in-up-feature" style="animation-delay: 0.3s;">
+                    <div class="mr-4">
+                        <div class="w-12 h-12 flex items-center justify-center bg-gold bg-opacity-10 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-gold" style="color: var(--color-gold);">
+                                <path d="M13 2 3 14h9l-1 8 10-12h-9l1-8z"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Por que fazemos</h3>
+                        <p class="text-gray-600">Para aumentar o alcance, engajamento e conversões do seu negócio, direcionando suas mensagens exatamente para o público que você deseja atingir.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 3 -->
+                <div class="card flex fade-in-up-feature" style="animation-delay: 0.45s;">
+                    <div class="mr-4">
+                        <div class="w-12 h-12 flex items-center justify-center bg-gold bg-opacity-10 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-gold" style="color: var(--color-gold);">
+                                <path d="M3 3v18h18"></path>
+                                <path d="m19 9-5 5-4-4-3 3"></path>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Como fazemos</h3>
+                        <p class="text-gray-600">Através da otimização de funis de conversão, análise constante de métricas e desenvolvimento de campanhas estratégicas focadas em resultados.</p>
+                    </div>
+                </div>
+                
+                <!-- Feature 4 -->
+                <div class="card flex fade-in-up-feature" style="animation-delay: 0.6s;">
+                    <div class="mr-4">
+                        <div class="w-12 h-12 flex items-center justify-center bg-gold bg-opacity-10 rounded-full">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-6 w-6 text-gold" style="color: var(--color-gold);">
+                                <path d="M14.5 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V7.5L14.5 2z"></path>
+                                <polyline points="14 2 14 8 20 8"></polyline>
+                                <line x1="16" y1="13" x2="8" y2="13"></line>
+                                <line x1="16" y1="17" x2="8" y2="17"></line>
+                                <line x1="10" y1="9" x2="8" y2="9"></line>
+                            </svg>
+                        </div>
+                    </div>
+                    <div>
+                        <h3 class="text-xl font-bold mb-2">Material complementar</h3>
+                        <p class="text-gray-600">Disponibilizamos recursos educativos para que você entenda melhor como o tráfego pago pode impulsionar seu negócio.</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="mt-12 text-center fade-in-up-cta">
+                <a 
+                    href="https://drive.google.com/file/d/YOUR_PDF_LINK/view"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    class="btn-primary"
+                >
+                    Saiba mais sobre Tráfego Pago
+                </a>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-neutralGray">
+        <div class="container-custom">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Funil de Marketing</h2>
+                <p class="section-subtitle">
+                    Entenda como conduzimos seus potenciais clientes por uma jornada estratégica,
+                    desde o primeiro contato com sua marca até a conversão e fidelização.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
+                <div class="fade-in-left order-2 lg:order-1">
+                    <div id="funnel-info" class="bg-white p-8 rounded-2xl shadow-custom">
+                        <h3 id="step-title" class="text-2xl font-bold mb-6" style="color: #C8A847;">
+                            Consciência
+                        </h3>
+                        <p id="step-description" class="text-gray-700 mb-6">
+                            Nesta fase, o objetivo é fazer com que potenciais clientes conheçam sua marca e ofertas. Utilizamos conteúdos educativos, anúncios de branding e presença em redes sociais.
+                        </p>
+                        
+                        <div class="flex justify-between mt-8">
+                            <button 
+                                class="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-gold text-white"
+                                data-step="1"
+                                data-name="Consciência"
+                                data-description="Nesta fase, o objetivo é fazer com que potenciais clientes conheçam sua marca e ofertas. Utilizamos conteúdos educativos, anúncios de branding e presença em redes sociais."
+                                data-color="#C8A847"
+                                onclick="changeStep(this)"
+                            >
+                                1
+                            </button>
+                            <button 
+                                class="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-gray-200 text-gray-600"
+                                data-step="2"
+                                data-name="Conhecimento"
+                                data-description="Aqui, fornecemos informações mais detalhadas sobre seus produtos ou serviços, demonstrando como eles podem resolver problemas específicos do público."
+                                data-color="#b99c40"
+                                onclick="changeStep(this)"
+                            >
+                                2
+                            </button>
+                            <button 
+                                class="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-gray-200 text-gray-600"
+                                data-step="3"
+                                data-name="Consideração"
+                                data-description="Neste estágio, os potenciais clientes estão comparando opções. Oferecemos conteúdo persuasivo que destaca seus diferenciais competitivos."
+                                data-color="#a8903a"
+                                onclick="changeStep(this)"
+                            >
+                                3
+                            </button>
+                            <button 
+                                class="w-10 h-10 rounded-full flex items-center justify-center transition-all bg-gray-200 text-gray-600"
+                                data-step="4"
+                                data-name="Decisão"
+                                data-description="É o momento da conversão. Utilizamos ofertas especiais, depoimentos, garantias e chamadas para ação claras para incentivar a compra ou contratação."
+                                data-color="#978334"
+                                onclick="changeStep(this)"
+                            >
+                                4
+                            </button>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="fade-in-right order-1 lg:order-2">
+                    <div class="relative">
+                        <svg id="funnel-svg" class="w-full max-w-md mx-auto" viewBox="0 0 300 400" xmlns="http://www.w3.org/2000/svg">
+                            <path 
+                                id="funnel-step-1"
+                                d="M20,0 L280,0 L240,133 L60,133 Z" 
+                                fill="#C8A847" 
+                                opacity="1"
+                            />
+                            <path 
+                                id="funnel-step-2"
+                                d="M60,143 L240,143 L210,253 L90,253 Z" 
+                                fill="#D4D4D4" 
+                                opacity="0.3"
+                            />
+                            <path 
+                                id="funnel-step-3"
+                                d="M90,263 L210,263 L180,350 L120,350 Z" 
+                                fill="#D4D4D4" 
+                                opacity="0.3"
+                            />
+                            <path 
+                                id="funnel-step-4"
+                                d="M120,360 L180,360 L160,400 L140,400 Z" 
+                                fill="#D4D4D4" 
+                                opacity="0.3"
+                            />
+                        </svg>
+                        
+                        <div class="absolute top-0 left-1/2 transform text-white font-bold">
+                            Consciência
+                        </div>
+                        <div class="absolute top-[30%] left-1/2 transform text-white font-bold">
+                            Conhecimento
+                        </div>
+                        <div class="absolute top-[60%] left-1/2 transform text-white font-bold">
+                            Consideração
+                        </div>
+                        <div class="absolute top-[90%] left-1/2 transform text-white font-bold">
+                            Decisão
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section class="py-20 bg-darkBrown text-snowWhite">
+        <div class="container-custom">
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
+                <div class="fade-in-left">
+                    <h2 class="text-3xl md:text-4xl font-bold mb-6 text-gold">
+                        Soluções em Inteligência Artificial
+                    </h2>
+                    <p class="text-xl mb-8">
+                        Descubra como o seu negócio pode causar um impacto ainda maior com aquilo que nós fazemos de melhor!
+                    </p>
+                    
+                    <ul class="space-y-4 mb-8">
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-gold flex items-center justify-center mr-3 mt-1">
+                                <span class="text-darkBrown font-bold text-sm">1</span>
+                            </div>
+                            <p>Automação de processos e análise de dados para decisões mais assertivas</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-gold flex items-center justify-center mr-3 mt-1">
+                                <span class="text-darkBrown font-bold text-sm">2</span>
+                            </div>
+                            <p>Chatbots e assistentes virtuais personalizados para atendimento 24/7</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-gold flex items-center justify-center mr-3 mt-1">
+                                <span class="text-darkBrown font-bold text-sm">3</span>
+                            </div>
+                            <p>Análise preditiva para antecipar tendências e comportamentos de consumo</p>
+                        </li>
+                        <li class="flex items-start">
+                            <div class="w-6 h-6 rounded-full bg-gold flex items-center justify-center mr-3 mt-1">
+                                <span class="text-darkBrown font-bold text-sm">4</span>
+                            </div>
+                            <p>Personalização de conteúdo e ofertas baseadas em IA</p>
+                        </li>
+                    </ul>
+                    
+                    <a
+                        href="#contato"
+                        class="btn-primary inline-block"
+                    >
+                        Quero uma solução em IA
+                    </a>
+                </div>
+                
+                <div class="fade-in-right relative">
+                    <div class="absolute inset-0 bg-gold opacity-10 rounded-full blur-3xl"></div>
+                    <div class="relative z-10 flex justify-center">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="256" height="256" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-64 h-64 text-gold" style="color: var(--color-gold);">
+                            <path d="M12 4.5a2.5 2.5 0 0 0-4.96-.46 2.5 2.5 0 0 0-1.98 3 2.5 2.5 0 0 0-1.32 4.24 3 3 0 0 0 .34 5.58 2.5 2.5 0 0 0 2.96 3.08 2.5 2.5 0 0 0 4.91.05L12 20V4.5Z"></path>
+                            <path d="M16 8V5c0-1.1.9-2 2-2s2 .9 2 2v3"></path>
+                            <path d="M12 13h4"></path>
+                            <path d="M12 18h6a2 2 0 0 1 2 2v1"></path>
+                            <path d="M12 8h8"></path>
+                            <path d="M20.5 8a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"></path>
+                            <path d="M16.5 13a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"></path>
+                            <path d="M20.5 21a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"></path>
+                            <path d="M18.5 13a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0Z"></path>
+                        </svg>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <section id="contato" class="py-20 bg-snowWhite">
+        <div class="container-custom">
+            <div class="text-center mb-16 fade-in-up">
+                <h2 class="section-title">Entre em Contato</h2>
+                <p class="section-subtitle">
+                    Queremos ouvir você. Compartilhe seu desafio conosco e vamos trabalhar juntos 
+                    para encontrar a solução ideal para o seu negócio.
+                </p>
+            </div>
+
+            <div class="grid grid-cols-1 lg:grid-cols-2 gap-12">
+                <div class="fade-in-left">
+                    <form id="contactForm" class="bg-white p-8 rounded-2xl shadow-custom">
+                        <div class="mb-6">
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nome Completo</label>
+                            <input
+                                type="text"
+                                id="name"
+                                name="name"
+                                required
+                                class="w-full px-4 py-3 border border-neutralGray rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
+                                placeholder="Seu nome"
+                            />
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="email" class="block text-gray-700 font-medium mb-2">E-mail</label>
+                            <input
+                                type="email"
+                                id="email"
+                                name="email"
+                                required
+                                class="w-full px-4 py-3 border border-neutralGray rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
+                                placeholder="seu@email.com"
+                            />
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="company" class="block text-gray-700 font-medium mb-2">Empresa</label>
+                            <input
+                                type="text"
+                                id="company"
+                                name="company"
+                                class="w-full px-4 py-3 border border-neutralGray rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
+                                placeholder="Nome da sua empresa"
+                            />
+                        </div>
+                        
+                        <div class="mb-6">
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensagem</label>
+                            <textarea
+                                id="message"
+                                name="message"
+                                required
+                                rows="5"
+                                class="w-full px-4 py-3 border border-neutralGray rounded-md focus:outline-none focus:ring-2 focus:ring-gold"
+                                placeholder="Como podemos ajudar?"
+                            ></textarea>
+                        </div>
+                        
+                        <button
+                            type="submit"
+                            class="btn-primary w-full flex items-center justify-center"
+                        >
+                            Enviar Mensagem 
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="ml-2 h-5 w-5">
+                                <path d="m22 2-7 20-4-9-9-4Z"></path>
+                                <path d="M22 2 11 13"></path>
+                            </svg>
+                        </button>
+                    </form>
+                </div>
+                
+                <div class="fade-in-right flex flex-col justify-center">
+                    <div class="bg-darkBrown p-8 rounded-2xl text-snowWhite">
+                        <h3 class="text-2xl font-bold mb-8 text-gold">Informações de Contato</h3>
+                        
+                        <div class="space-y-6">
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-gold mr-4 mt-1" style="color: var(--color-gold);">
+                                    <path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"></path>
+                                    <circle cx="12" cy="10" r="3"></circle>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold mb-1">Endereço</h4>
+                                    <p>Rua Exemplo, 123</p>
+                                    <p>São Paulo, SP - Brasil</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-gold mr-4 mt-1" style="color: var(--color-gold);">
+                                    <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold mb-1">Telefone</h4>
+                                    <p>(11) 91234-5678</p>
+                                </div>
+                            </div>
+                            
+                            <div class="flex items-start">
+                                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="w-6 h-6 text-gold mr-4 mt-1" style="color: var(--color-gold);">
+                                    <rect width="20" height="16" x="2" y="4" rx="2"></rect>
+                                    <path d="m22 7-8.97 5.7a1.94 1.94 0 0 1-2.06 0L2 7"></path>
+                                </svg>
+                                <div>
+                                    <h4 class="font-bold mb-1">E-mail</h4>
+                                    <p>contato@ifncbusiness.com</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="mt-12">
+                            <h4 class="font-bold mb-4">Horário de Atendimento</h4>
+                            <p>Segunda a Sexta: 9h às 18h</p>
+                            <p>Sábados: 9h às 13h</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <footer class="bg-darkBrown text-snowWhite">
+        <div class="container-custom py-16">
+            <div class="footer-row">
+                <!-- IFNC Business -->
+                <div class="footer-col">
+                    <div class="flex items-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-gold mr-2" style="color: var(--color-gold);">
+                            <path d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z"></path>
+                            <path d="M5 3v4"></path>
+                            <path d="M19 17v4"></path>
+                            <path d="M3 5h4"></path>
+                            <path d="M17 19h4"></path>
+                        </svg>
+                        <span class="font-playfair font-bold text-xl text-gold">IFNC Business</span>
+                    </div>
+                    <p class="text-neutralGray mb-6">
+                        Transformando negócios através do marketing digital com empatia, inovação e estratégia.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-neutralGray hover:text-gold transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutralGray hover:text-gold transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutralGray hover:text-gold transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M22 4s-.7 2.1-2 3.4c1.6 10-9.4 17.3-18 11.6 2.2.1 4.4-.6 6-2C3 15.5.5 9.6 3 5c2.2 2.6 5.6 4.1 9 4-.9-4.2 4-6.6 7-3.8 1.1 0 3-1.2 3-1.2z"></path>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutralGray hover:text-gold transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z"></path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="#" class="text-neutralGray hover:text-gold transition-colors">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                                <path d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17"></path>
+                                <path d="m10 15 5-3-5-3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Serviços -->
+                <div class="footer-col">
+                    <h3 class="font-bold text-xl mb-6">Serviços</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-neutralGray hover:text-gold transition-colors">Criação de Marcas</a></li>
+                        <li><a href="#" class="text-neutralGray hover:text-gold transition-colors">Desenvolvimento Web</a></li>
+                        <li><a href="#" class="text-neutralGray hover:text-gold transition-colors">Produção Audiovisual</a></li>
+                        <li><a href="#" class="text-neutralGray hover:text-gold transition-colors">Gestão de Tráfego</a></li>
+                        <li><a href="#" class="text-neutralGray hover:text-gold transition-colors">Soluções em IA</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Links Úteis -->
+                <div class="footer-col">
+                    <h3 class="font-bold text-xl mb-6">Links Úteis</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#" class="text-neutralGray hover:text-gold transition-colors">Sobre Nós</a></li>
+                        <li><a href="#" class="text-neutralGray hover:text-gold transition-colors">Blog</a></li>
+                        <li><a href="#" class="text-neutralGray hover:text-gold transition-colors">Carreiras</a></li>
+                        <li><a href="#" class="text-neutralGray hover:text-gold transition-colors">Parcerias</a></li>
+                        <li><a href="#" class="text-neutralGray hover:text-gold transition-colors">Casos de Sucesso</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h3 class="font-bold text-xl mb-6">Newsletter</h3>
+                    <p class="text-neutralGray mb-4">
+                        Inscreva-se para receber nossas atualizações e conteúdos exclusivos.
+                    </p>
+                    <form class="flex">
+                        <input
+                            type="email"
+                            placeholder="Seu e-mail"
+                            class="px-4 py-2 rounded-l-md flex-grow focus:outline-none focus:ring-2 focus:ring-gold"
+                        />
+                        <button
+                            type="submit"
+                            class="bg-gold text-darkBrown px-4 py-2 rounded-r-md hover:bg-opacity-90 transition-colors"
+                        >
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-neutralGray text-sm mb-4 md:mb-0">
+                    &copy; <script>document.write(new Date().getFullYear())</script> IFNC Business. Todos os direitos reservados.
+                </p>
+                <div class="flex items-center">
+                    <a href="#" class="text-neutralGray hover:text-gold text-sm mr-6">Termos de Uso</a>
+                    <a href="#" class="text-neutralGray hover:text-gold text-sm mr-6">Política de Privacidade</a>
+                    <button
+                        onclick="window.scrollTo({top: 0, behavior: 'smooth'})"
+                        class="bg-gold bg-opacity-10 rounded-full p-2 text-gold hover:bg-opacity-20 transition-all"
+                        aria-label="Voltar ao topo"
+                    >
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m18 15-6-6-6 6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>
