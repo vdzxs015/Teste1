@@ -69,14 +69,6 @@
     opacity: 0.1;
 }
 
-.text-xl {
-    font-size: 1.25rem;
-}
-
-.font-bold {
-    font-weight: 700;
-}
-
 .text-gray-600 {
     color: var(--color-neutral-gray);
 }

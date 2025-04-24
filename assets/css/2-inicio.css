@@ -34,13 +34,20 @@ body {
     padding-top: 5rem;
 }
 
+.background-image {
+    background-image: url('assets/img/background.png');
+    background-size: cover;
+    background-position: center;
+    position: relative;
+}
+
 .grid {
     display: grid;
     gap: 3rem;
 }
 
 .font-playfair {
-    font-family: 'Playfair Display', serif;
+    font-family: 'Poppins', serif;
 }
 
 h1 {
@@ -50,9 +57,6 @@ h1 {
     margin-bottom: 1.5rem;
 }
 
-.text-gold {
-    color: var(--color-gold);
-}
 
 .text-neutralGray {
     color: var(--color-neutral-gray);
@@ -144,9 +148,7 @@ p {
     margin-top: 1rem;
 }
 
-.mb-6 {
-    margin-bottom: 1.5rem;
-}
+
 
 .mb-8 {
     margin-bottom: 2rem;
@@ -172,32 +174,6 @@ p {
     justify-content: center;
 }
 
-/* Animation classes */
-.fade-in-left {
-    animation: fadeInLeft 0.8s ease-out 0.2s forwards;
-    opacity: 0;
-    transform: translateX(-50px);
-}
-
-.fade-in-right {
-    animation: fadeInRight 0.8s ease-out 0.4s forwards;
-    opacity: 0;
-    transform: translateX(50px);
-}
-
-@keyframes fadeInLeft {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
-
-@keyframes fadeInRight {
-    to {
-        opacity: 1;
-        transform: translateX(0);
-    }
-}
 
 /* Responsive styles */
 @media (min-width: 768px) {

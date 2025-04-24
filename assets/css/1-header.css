@@ -73,17 +73,6 @@
     margin-right: 0.5rem;
 }
 
-.text-xl {
-    font-size: 1.25rem;
-}
-
-.font-bold {
-    font-weight: 700;
-}
-
-.text-gold {
-    color: var(--color-gold);
-}
 
 .text-snowWhite {
     color: var(--color-snow-white);
@@ -93,9 +82,6 @@
     color: var(--color-dark-brown);
 }
 
-.hover\:text-gold:hover {
-    color: var(--color-gold);
-}
 
 .transition-all {
     transition: all 0.3s ease;
