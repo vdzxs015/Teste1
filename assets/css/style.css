@@ -26,6 +26,7 @@ body {
 }
 
 #início {
+    background-image: url('./assets/images/background.jpg');
     min-height: 100vh;
     display: flex;
     align-items: center;
