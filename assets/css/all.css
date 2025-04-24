@@ -165,3 +165,7 @@ body {
 .space-x-8 > * + * {
     margin-left: 2rem;
 }
+
+.mb-4 {
+    margin-bottom: 1rem;
+}

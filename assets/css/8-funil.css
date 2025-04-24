@@ -1,3 +1,19 @@
+:root {
+    --color-dark-brown: #3a2a1d;
+    --color-matt-black: #1a1a1a;
+    --color-snow-white: #f8f8f8;
+    --color-gold: #002d3c;
+    --color-white-blue: #308491;
+    --color-neutral-gray: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
 /* Additional styles for the marketing funnel section */
 .bg-white {
     background-color: white;
