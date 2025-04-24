@@ -2,7 +2,8 @@
     --color-dark-brown: #3a2a1d;
     --color-matt-black: #1a1a1a;
     --color-snow-white: #f8f8f8;
-    --color-gold: #d4af37;
+    --color-gold: #002d3c;
+    --color-white-blue: #308491;
     --color-neutral-gray: #a0a0a0;
 }
 
@@ -10,12 +11,12 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
 }
 
 body {
-    font-family: 'Inter', sans-serif;
     color: var(--color-snow-white);
-    background: linear-gradient(to bottom right, var(--color-dark-brown), var(--color-matt-black));
+    background: linear-gradient(to bottom right, var(--color-matt-black), var(--color-matt-black));
 }
 
 .container-custom {
@@ -26,7 +27,6 @@ body {
 }
 
 #início {
-    background-image: url('./assets/images/background.jpg');
     min-height: 100vh;
     display: flex;
     align-items: center;
