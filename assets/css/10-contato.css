@@ -1,8 +1,4 @@
 /* Additional styles for the contact form section */
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
-}
 
 .py-3 {
     padding-top: 0.75rem;
@@ -34,21 +30,8 @@
     box-shadow: 0 0 0 2px var(--color-gold);
 }
 
-.w-full {
-    width: 100%;
-}
 
-.block {
-    display: block;
-}
 
-.mb-2 {
-    margin-bottom: 0.5rem;
-}
-
-.space-y-6 > * + * {
-    margin-top: 1.5rem;
-}
 
 .mt-12 {
     margin-top: 3rem;

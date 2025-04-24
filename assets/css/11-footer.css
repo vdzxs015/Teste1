@@ -11,13 +11,7 @@
     min-width: 200px;
 }
 
-.space-x-4 > * + * {
-    margin-left: 1rem;
-}
 
-.space-y-3 > * + * {
-    margin-top: 0.75rem;
-}
 
 .mr-2 {
     margin-right: 0.5rem;
@@ -34,11 +28,6 @@
 .py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;
-}
-
-.px-4 {
-    padding-left: 1rem;
-    padding-right: 1rem;
 }
 
 .rounded-l-md {

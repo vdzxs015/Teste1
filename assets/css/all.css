@@ -133,3 +133,35 @@ body {
 .font-medium {
     font-weight: 500;
 }
+.px-4 {
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+.w-full {
+    width: 100%;
+}
+
+.block {
+    display: block;
+}
+
+.mb-2 {
+    margin-bottom: 0.5rem;
+}
+
+.space-y-3 > * + * {
+    margin-top: 0.75rem;
+}
+
+.space-x-4 > * + * {
+    margin-left: 1rem;
+}
+
+.space-x-6 > * + * {
+    margin-left: 1.5rem;
+}
+
+.space-x-8 > * + * {
+    margin-left: 2rem;
+}

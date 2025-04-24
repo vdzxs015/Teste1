@@ -36,9 +36,7 @@
     margin-top: 2rem;
 }
 
-.space-x-6 > * + * {
-    margin-left: 1.5rem;
-}
+
 
 .mt-4 {
     margin-top: 1rem;

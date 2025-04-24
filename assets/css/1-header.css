@@ -77,20 +77,10 @@
     transition: all 0.3s ease;
 }
 
-.space-x-8 > * + * {
-    margin-left: 2rem;
-}
 
-.space-y-4 > * + * {
-    margin-top: 1rem;
-}
 
 .hidden {
     display: none;
-}
-
-.block {
-    display: block;
 }
 
 /* Mobile menu animation */

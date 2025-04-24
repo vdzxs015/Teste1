@@ -15,9 +15,6 @@
     margin-top: 0.25rem;
 }
 
-.space-y-4 > * + * {
-    margin-top: 1rem;
-}
 
 .w-6 {
     width: 1.5rem;
