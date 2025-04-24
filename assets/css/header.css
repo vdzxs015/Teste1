@@ -1,0 +1,141 @@
+/* Estilos para o header */
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 50;
+    transition: all 0.3s ease;
+}
+
+.header-animated {
+    animation: headerSlideDown 0.5s ease forwards;
+}
+
+@keyframes headerSlideDown {
+    from {
+        transform: translateY(-100px);
+    }
+    to {
+        transform: translateY(0);
+    }
+}
+
+.bg-transparent {
+    background-color: transparent;
+}
+
+.bg-darkBrown {
+    background-color: var(--color-dark-brown);
+}
+
+.bg-opacity-95 {
+    opacity: 0.95;
+}
+
+.shadow-md {
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.container-header {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+.py-4 {
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.justify-between {
+    justify-content: space-between;
+}
+
+.items-center {
+    align-items: center;
+}
+
+.h-8 {
+    height: 2rem;
+}
+
+.w-8 {
+    width: 2rem;
+}
+
+.mr-2 {
+    margin-right: 0.5rem;
+}
+
+.text-xl {
+    font-size: 1.25rem;
+}
+
+.font-bold {
+    font-weight: 700;
+}
+
+.text-gold {
+    color: var(--color-gold);
+}
+
+.text-snowWhite {
+    color: var(--color-snow-white);
+}
+
+.text-darkBrown {
+    color: var(--color-dark-brown);
+}
+
+.hover\:text-gold:hover {
+    color: var(--color-gold);
+}
+
+.transition-all {
+    transition: all 0.3s ease;
+}
+
+.space-x-8 > * + * {
+    margin-left: 2rem;
+}
+
+.space-y-4 > * + * {
+    margin-top: 1rem;
+}
+
+.hidden {
+    display: none;
+}
+
+.block {
+    display: block;
+}
+
+/* Mobile menu animation */
+.mobile-menu {
+    overflow: hidden;
+    max-height: 0;
+    opacity: 0;
+    transition: max-height 0.3s ease, opacity 0.3s ease;
+}
+
+.mobile-menu.open {
+    max-height: 300px;
+    opacity: 1;
+}
+
+/* Responsive */
+@media (min-width: 768px) {
+    .md\:flex {
+        display: flex;
+    }
+    
+    .md\:hidden {
+        display: none;
+    }
+}

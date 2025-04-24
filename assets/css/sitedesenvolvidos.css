@@ -1,0 +1,57 @@
+/* Additional styles for the websites portfolio section */
+.h-48 {
+    height: 12rem;
+}
+
+.mb-6 {
+    margin-bottom: 1.5rem;
+}
+
+.mb-3 {
+    margin-bottom: 0.75rem;
+}
+
+.mb-4 {
+    margin-bottom: 1rem;
+}
+
+.p-4 {
+    padding: 1rem;
+}
+
+.transition-transform {
+    transition: transform 0.5s ease;
+}
+
+.hover\:scale-110:hover {
+    transform: scale(1.1);
+}
+
+.gap-10 {
+    gap: 2.5rem;
+}
+
+.hover\:text-darkBrown:hover {
+    color: var(--color-dark-brown);
+}
+
+/* Animation for website cards */
+.fade-in-up-website {
+    animation: fadeInUpWebsite 0.5s ease-out forwards;
+    opacity: 0;
+    transform: translateY(50px);
+}
+
+@keyframes fadeInUpWebsite {
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Responsive grid for websites */
+@media (min-width: 1024px) {
+    .grid-websites {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
