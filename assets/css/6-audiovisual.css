@@ -36,14 +36,6 @@
     margin-top: 2rem;
 }
 
-.text-lg {
-    font-size: 1.125rem;
-}
-
-.font-medium {
-    font-weight: 500;
-}
-
 .space-x-6 > * + * {
     margin-left: 1.5rem;
 }

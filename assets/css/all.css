@@ -1,3 +1,25 @@
+:root {
+    --color-dark-brown: #3a2a1d;
+    --color-matt-black: #1a1a1a;
+    --color-snow-white: #f8f8f8;
+    --color-gold: #002d3c;
+    --color-white-blue: #308491;
+    --color-neutral-gray: #a0a0a0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    color: var(--color-snow-white);
+    background: linear-gradient(to bottom right, var(--color-matt-black), var(--color-matt-black));
+}
+
+
 .fade-in-left {
     animation: fadeInLeft 0.6s ease-out 0.2s forwards;
     opacity: 0;
@@ -41,4 +63,73 @@
 }
 .hover\:text-gold:hover {
     color: var(--color-gold);
+}
+.font-title {
+    font-family: 'Poppins', sans-serif;
+    font-weight: 700;
+    font-size: 1.15rem;
+    color: var(--color-white-blue);
+}
+
+
+.text-snowWhite {
+    color: var(--color-snow-white);
+}
+
+.text-darkBrown {
+    color: var(--color-dark-brown);
+}
+
+.text-neutralGray {
+    color: var(--color-neutral-gray);
+}
+
+.text-center {
+    text-align: center;
+}
+
+.text-gray-600 {
+    color: var(--color-neutral-gray);
+}
+
+.hover\:text-darkBrown:hover {
+    color: var(--color-dark-brown);
+}
+
+.text-lg {
+    font-size: 1.125rem;
+}
+
+.text-2xl {
+    font-size: 1.5rem;
+}
+
+.text-gray-700 {
+    color: #4a5568;
+}
+
+.text-white {
+    color: white;
+}
+
+.text-gray-600 {
+    color: #4b5563;
+}
+
+.text-3xl {
+    font-size: 1.875rem;
+}
+
+.text-sm {
+    font-size: 0.875rem;
+}
+
+@media (min-width: 768px) {
+    .text-4xl {
+        font-size: 2.25rem;
+    }
+}
+
+.font-medium {
+    font-weight: 500;
 }

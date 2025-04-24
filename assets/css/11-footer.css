@@ -31,11 +31,6 @@
     transition: color 0.3s ease;
 }
 
-
-.text-sm {
-    font-size: 0.875rem;
-}
-
 .py-2 {
     padding-top: 0.5rem;
     padding-bottom: 0.5rem;

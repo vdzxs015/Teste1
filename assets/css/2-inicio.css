@@ -1,24 +1,3 @@
-:root {
-    --color-dark-brown: #3a2a1d;
-    --color-matt-black: #1a1a1a;
-    --color-snow-white: #f8f8f8;
-    --color-gold: #002d3c;
-    --color-white-blue: #308491;
-    --color-neutral-gray: #a0a0a0;
-}
-
-* {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-    font-family: 'Poppins', sans-serif;
-}
-
-body {
-    color: var(--color-snow-white);
-    background: linear-gradient(to bottom right, var(--color-matt-black), var(--color-matt-black));
-}
-
 .container-custom {
     width: 90%;
     max-width: 1200px;
@@ -46,10 +25,6 @@ body {
     gap: 3rem;
 }
 
-.font-playfair {
-    font-family: 'Poppins', serif;
-}
-
 h1 {
     font-size: 2.5rem;
     font-weight: bold;
@@ -58,9 +33,7 @@ h1 {
 }
 
 
-.text-neutralGray {
-    color: var(--color-neutral-gray);
-}
+
 
 p {
     font-size: 1.125rem;

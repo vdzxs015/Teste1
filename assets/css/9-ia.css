@@ -3,19 +3,6 @@
     background-color: var(--color-dark-brown);
 }
 
-.text-snowWhite {
-    color: var(--color-snow-white);
-}
-
-.text-3xl {
-    font-size: 1.875rem;
-}
-
-.text-sm {
-    font-size: 0.875rem;
-}
-
-
 .mb-8 {
     margin-bottom: 2rem;
 }
@@ -85,8 +72,3 @@
     transform: scale(0.95);
 }
 
-@media (min-width: 768px) {
-    .text-4xl {
-        font-size: 2.25rem;
-    }
-}
