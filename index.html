@@ -8,90 +8,59 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="./assets/css/header.css">
-    <link rel="stylesheet" href="./assets/css/style.css">
-    <link rel="stylesheet" href="./assets/css/sobrenos.css">
-    <link rel="stylesheet" href="./assets/css/marcaelaboradas.css">
-    <link rel="stylesheet" href="./assets/css/sitedesenvolvidos.css">
-    <link rel="stylesheet" href="./assets/css/audiovisual.css">
-    <link rel="stylesheet" href="./assets/css/trafegopago.css">
-    <link rel="stylesheet" href="./assets/css/funil.css">
-    <link rel="stylesheet" href="./assets/css/ia.css">
-    <link rel="stylesheet" href="./assets/css/contato.css">
-    <link rel="stylesheet" href="./assets/css/footer.css">
+    <link rel="stylesheet" href="./assets/css/1-header.css">
+    <link rel="stylesheet" href="./assets/css/2-inicio.css">
+    <link rel="stylesheet" href="./assets/css/3-sobrenos.css">
+    <link rel="stylesheet" href="./assets/css/4-marcaelaboradas.css">
+    <link rel="stylesheet" href="./assets/css/5-sitedesenvolvidos.css">
+    <link rel="stylesheet" href="./assets/css/6-audiovisual.css">
+    <link rel="stylesheet" href="./assets/css/7-trafegopago.css">
+    <link rel="stylesheet" href="./assets/css/8-funil.css">
+    <link rel="stylesheet" href="./assets/css/9-ia.css">
+    <link rel="stylesheet" href="./assets/css/10-contato.css">
+    <link rel="stylesheet" href="./assets/css/11-footer.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
     <link rel="shortcut icon" href="./assets/img/ChatGPT Image 24 de abr. de 2025, 15_17_27.png">
     <script src="./assets/js/Funil.js"></script>
     <script src="./assets/js/Contato.js"></script>
     <script src="./assets/js/Header.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
 </head>
 <body>
+
     <header id="main-header" class="header header-animated bg-transparent">
-        <div class="container-header py-4 flex justify-between items-center">
-            <a href="#" class="flex items-center">
-                <img src="./assets/img/ChatGPT Image 24 de abr. de 2025, 15_17_27.png" width="128" height="128" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-gold mr-2" alt="Logo IFNC Business" class="logo">
-                <span class="font-playfair font-bold text-xl text-gold">IFNC Business</span>
-            </a>
-
-            <!-- Desktop Navigation -->
-            <nav class="hidden md:flex">
-                <ul class="flex space-x-8">
-                    <li>
-                        <a href="#início" class="text-darkBrown hover:text-gold transition-all">Início</a>
-                    </li>
-                    <li>
-                        <a href="#sobre" class="text-darkBrown hover:text-gold transition-all">Sobre</a>
-                    </li>
-                    <li>
-                        <a href="#portfólio" class="text-darkBrown hover:text-gold transition-all">Portfólio</a>
-                    </li>
-                    <li>
-                        <a href="#serviços" class="text-darkBrown hover:text-gold transition-all">Serviços</a>
-                    </li>
-                    <li>
-                        <a href="#contato" class="text-darkBrown hover:text-gold transition-all">Contato</a>
-                    </li>
-                </ul>
-            </nav>
-
-            <!-- Mobile Menu Button -->
-            <button 
-                id="menu-toggle" 
-                class="md:hidden text-gold"
-                aria-label="Toggle menu"
-            >
-                <svg id="menu-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                    <line x1="4" x2="20" y1="12" y2="12"></line>
-                    <line x1="4" x2="20" y1="6" y2="6"></line>
-                    <line x1="4" x2="20" y1="18" y2="18"></line>
-                </svg>
-                <svg id="close-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" style="display: none;">
-                    <path d="M18 6 6 18"></path>
-                    <path d="m6 6 12 12"></path>
-                </svg>
-            </button>
-        </div>
-
-        <!-- Mobile Navigation -->
-        <div id="mobile-menu" class="md:hidden mobile-menu bg-darkBrown bg-opacity-95">
-            <ul class="container-custom py-4 space-y-4">
-                <li>
-                    <a href="#início" class="block text-snowWhite hover:text-gold transition-all">Início</a>
-                </li>
-                <li>
-                    <a href="#sobre" class="block text-snowWhite hover:text-gold transition-all">Sobre</a>
-                </li>
-                <li>
-                    <a href="#portfólio" class="block text-snowWhite hover:text-gold transition-all">Portfólio</a>
-                </li>
-                <li>
-                    <a href="#serviços" class="block text-snowWhite hover:text-gold transition-all">Serviços</a>
-                </li>
-                <li>
-                    <a href="#contato" class="block text-snowWhite hover:text-gold transition-all">Contato</a>
-                </li>
-            </ul>
-        </div>
+        <nav class="navbar navbar-expand-lg bg-body-tertiary">
+            <div class="container-fluid">
+                <a class="navbar-brand container-header" href="#">
+                    <img src="./assets/img/ChatGPT Image 24 de abr. de 2025, 15_17_27.png" width="128" height="128" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="h-8 w-8 text-gold mr-2" alt="Logo IFNC Business" class="logo">
+                    <span class="font-playfair font-bold text-xl text-gold">IFNC Business</span>
+                </a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse col-6" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link" aria-current="page" href="#">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Portfólio</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" aria-disabled="true">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
     </header>
+
     <section id="início" class="min-h-screen flex items-center justify-content-center">
         <div class="container-custom">
             <div class="grid">
