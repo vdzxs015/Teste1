@@ -27,7 +27,7 @@ function changeStep(element) {
     // Update funnel visualization
     for (let i = 1; i <= 4; i++) {
         const funnelStep = document.getElementById(`funnel-step-${i}`);
-        const stepColors = ['#C8A847', '#b99c40', '#a8903a', '#978334'];
+        const stepColors = ['#002d3c', '#0d4152', '#1b5668', '#286b7e']; // Updated to blue tones
         
         if (i <= step) {
             funnelStep.setAttribute('fill', stepColors[i-1]);
