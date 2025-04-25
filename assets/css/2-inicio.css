@@ -27,13 +27,7 @@
     align-items: center;
     justify-content: center;
     padding-top: 5rem;
-}
-
-.background-image {
-    background-image: url('assets/img/background.png');
-    background-size: cover;
-    background-position: center;
-    position: relative;
+    background-color: var(--color-snow-white);
 }
 
 .grid {
@@ -42,14 +36,16 @@
 }
 
 .title-mkt {
-    color: var(--color-gold);
+    color: var(--color-white-blue);
     font-size: 3.7rem;
     font-weight: 300;
     line-height: 1.2;
     margin-bottom: 1.5rem;
+    font-weight: 700;
 }
 
 .title {
+    color: var(--color-matt-black);
     font-size: 3.7rem;
     font-weight: 300;
     line-height: 1.2;
@@ -61,12 +57,24 @@ p {
     margin-bottom: 2rem;
     max-width: 36rem;
 }
+.button {
+    display: inline-block;
+    background-color: var(--color-gold);
+    color: var(--color-snow-white);
+    font-size: 1.125rem;
+    padding: 0.75rem 1.5rem;
+    border-radius: 0.5rem;
+    font-weight: 600;
+    text-decoration: none;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
 
 .btn-primary {
     display: inline-flex;
     align-items: center;
-    background-color: var(--color-gold);
-    color: var(--color-matt-black);
+    background-color: var(--color-white-blue);
+    font-size: 1rem;
+    cursor: pointer;
     padding: 0.75rem 1.5rem;
     border-radius: 0.5rem;
     font-weight: 600;
