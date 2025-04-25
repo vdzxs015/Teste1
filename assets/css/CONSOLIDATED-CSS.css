@@ -655,12 +655,11 @@ text {
 }
 
 /* Home Section */
-#início {
+#inicio {
     min-height: 100vh;
     display: flex;
     align-items: center;
     justify-content: center;
-    padding-top: 5rem;
     background-color: var(--color-snow-white);
 }
 
@@ -758,7 +757,7 @@ p {
 
 /* Portfolio Section */
 #portfólio {
-    background-color: var(--color-neutral-gray);
+    background-color: var(--color-snow-white);
     padding: 5rem 0;
 }
 
