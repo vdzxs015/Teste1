@@ -1010,4 +1010,7 @@ p {
     .grid-audio {
         grid-template-columns: repeat(3, 1fr);
     }
+    .single_slider {
+        height: 950px; /* Define a altura para telas grandes */
+      }
 }
