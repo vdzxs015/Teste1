@@ -704,7 +704,6 @@
      display: flex;
      align-items: center;
      justify-content: center;
-     background-color: var(--color-snow-white);
  }
  
  .title-mkt {
@@ -811,6 +810,9 @@
      transform: translateY(-5px);
      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
  }
+
+
+ 
  
  /* Section Styles */
  .section-dark {
@@ -1369,5 +1371,3 @@ textarea.dark-input {
          height: 950px;
      }
  }
-
- 
