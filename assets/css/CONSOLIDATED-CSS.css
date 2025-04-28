@@ -894,6 +894,259 @@
      min-width: 200px;
  }
  
+/* Seção de Contato - Novas classes */
+.contact-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.contact-form-wrapper {
+    width: 100%;
+}
+
+.dark-form {
+    background-color: var(--color-back-card);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+}
+
+.form-group {
+    margin-bottom: 1.5rem;
+}
+
+.form-group label {
+    display: block;
+    color: var(--color-snow-white);
+    font-weight: 500;
+    margin-bottom: 0.5rem;
+}
+
+.dark-input {
+    width: 100%;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-border);
+    background-color: var(--color-back-input);
+    color: var(--color-snow-white);
+    border-radius: 0.375rem;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+}
+
+.dark-input:focus {
+    outline: none;
+    border-color: var(--color-white-blue);
+    box-shadow: 0 0 0 3px rgba(48, 132, 145, 0.2);
+}
+
+.dark-input::placeholder {
+    color: var(--color-text-secondary);
+    opacity: 0.6;
+}
+
+textarea.dark-input {
+    resize: vertical;
+    min-height: 120px;
+}
+
+.btn-full {
+    width: 100%;
+}
+
+/* Informações de Contato */
+.contact-info-wrapper {
+    height: 100%;
+}
+
+.contact-info {
+    background-color: var(--color-back-card);
+    padding: 2rem;
+    border-radius: 1rem;
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+    height: 100%;
+}
+
+.contact-info-title {
+    color: var(--color-white-blue);
+    font-size: 1.5rem;
+    font-weight: 700;
+    margin-bottom: 2rem;
+}
+
+.contact-info-items {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    margin-bottom: 2rem;
+}
+
+.contact-info-item {
+    display: flex;
+    align-items: flex-start;
+}
+
+.contact-info-item svg {
+    margin-right: 1rem;
+    margin-top: 0.25rem;
+    flex-shrink: 0;
+}
+
+.contact-info-item h4 {
+    font-weight: 600;
+    margin-bottom: 0.25rem;
+    color: var(--color-snow-white);
+}
+
+.contact-info-item p {
+    color: var(--color-text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+.hours-info h4 {
+    font-weight: 600;
+    margin-bottom: 0.5rem;
+    color: var(--color-snow-white);
+}
+
+.hours-info p {
+    color: var(--color-text-secondary);
+    margin-bottom: 0.25rem;
+}
+
+/* Footer - Novas classes */
+.dark-footer {
+    background-color: var(--color-back-card);
+    color: var(--color-snow-white);
+    padding: 4rem 0 2rem;
+}
+
+.footer-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 3rem;
+}
+
+.footer-brand {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1.5rem;
+}
+
+.footer-brand-text {
+    font-weight: 700;
+    font-size: 1.25rem;
+    color: var(--color-white-blue);
+    margin-left: 0.5rem;
+}
+
+.footer-heading {
+    font-size: 1.25rem;
+    color: var(--color-snow-white);
+    margin-bottom: 1rem;
+    font-weight: 700;
+}
+
+.footer-text {
+    color: var(--color-text-secondary);
+    margin-bottom: 1.5rem;
+    max-width: 400px;
+}
+
+.social-icons {
+    display: flex;
+    gap: 1rem;
+    margin-bottom: 2rem;
+}
+
+.social-icon {
+    color: var(--color-text-secondary);
+    transition: color 0.3s ease;
+}
+
+.social-icon:hover {
+    color: var(--color-white-blue);
+}
+
+.newsletter-form {
+    display: flex;
+    max-width: 400px;
+}
+
+.newsletter-input {
+    flex: 1;
+    padding: 0.75rem 1rem;
+    border: 1px solid var(--color-border);
+    border-right: none;
+    background-color: var(--color-back-input);
+    color: var(--color-snow-white);
+    border-radius: 0.375rem 0 0 0.375rem;
+}
+
+.newsletter-input:focus {
+    outline: none;
+    border-color: var(--color-white-blue);
+}
+
+.newsletter-btn {
+    background-color: var(--color-gold);
+    color: var(--color-snow-white);
+    border: none;
+    padding: 0 1.5rem;
+    font-weight: 600;
+    border-radius: 0 0.375rem 0.375rem 0;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.newsletter-btn:hover {
+    background-color: var(--color-gold-hover);
+}
+
+/* Variáveis adicionais necessárias */
+:root {
+    /* Adicione estas variáveis ao seu :root existente */
+    --color-back-input: #252728;
+    --color-border: #313233;
+    --color-text-secondary: #b0b0b0;
+    --color-gold-hover: #003a4b;
+}
+
+.back-to-top-btn {
+    background-color: var(--color-gold);
+    opacity: 0.1;
+    color: var(--color-white-blue);
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.back-to-top-btn:hover {
+    opacity: 0.2;
+    transform: translateY(-3px);
+}
+
+
+/* Ajuste de responsividade para as novas classes */
+@media (max-width: 992px) {
+    .contact-grid {
+        grid-template-columns: 1fr;
+    }
+    
+    .footer-grid {
+        grid-template-columns: 1fr;
+    }
+}
+
+@media (max-width: 576px) {
+    .dark-form,
+    .contact-info {
+        padding: 1.5rem;
+    }
+}
+
  /* Grid Layouts */
  .grid-about {
      display: grid;
@@ -1116,3 +1369,5 @@
          height: 950px;
      }
  }
+
+ 
