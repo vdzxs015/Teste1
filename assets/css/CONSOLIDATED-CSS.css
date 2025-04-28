@@ -827,6 +827,72 @@
      color: var(--color-snow-white);
  }
  
+/* Estilo para cards pretos - com maior especificidade */
+body .bg-neutralGray {
+    background-color: #161616 !important;
+}
+
+body .card, 
+section .card,
+#sobre .card,
+.grid .card {
+    background-color: #1a1a1a !important;
+    border: 1px solid #2a2a2a !important;
+    border-radius: 0.8rem !important;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.2) !important;
+    color: white !important;
+}
+
+.card:hover {
+    transform: translateY(-5px) !important;
+    border-color: #3a3a3a !important;
+    box-shadow: 0 8px 25px rgba(0, 0, 0, 0.3) !important;
+}
+
+.card h3 {
+    color: white !important;
+    font-weight: 700 !important;
+}
+
+.card p, 
+.card .text-gray-600,
+.card p.text-gray-600 {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.card .text-gold,
+.card svg {
+    color: #4babff !important;
+}
+
+.card .bg-gold.bg-opacity-10,
+.card .bg-card.bg-opacity-10 {
+    background-color: rgba(75, 171, 255, 0.1) !important;
+    border: 1px solid rgba(75, 171, 255, 0.2) !important;
+}
+
+#funnel-info {
+    background-color: #1a1a1a !important;
+    border: 1px solid #2a2a2a !important;
+    color: white !important;
+}
+
+#step-title {
+    color: #4babff !important;
+}
+
+#step-description {
+    color: rgba(255, 255, 255, 0.7) !important;
+}
+
+.bg-gray-200 {
+    background-color: #2a2a2a !important;
+}
+
+.text-white {
+    color: white !important;
+}
+ 
  .project-overlay {
      position: absolute;
      inset: 0;
