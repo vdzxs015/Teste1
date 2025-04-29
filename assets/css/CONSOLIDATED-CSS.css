@@ -9,7 +9,6 @@
  /* VARIABLES AND RESETS */
  /* ==================== */
  :root {
-     --color-dark-brown: #3a2a1d;
      --color-matt-black: #1a1a1a;
      --color-snow-white: #f8f8f8;
      --color-gold: #002d3c;
@@ -17,8 +16,10 @@
      --color-neutral-gray: #a0a0a0;
      --color-background: #202122;
      --color-back-card: #1B1D1D;
-
-    
+     --color-back-input: #252728;
+     --color-border: #313233;
+     --color-text-secondary: #b0b0b0;
+     --color-gold-hover: #003a4b;
  }
  
  * {
@@ -473,7 +474,7 @@
  }
  
  .text-gold {
-     color: var(--color-gold);
+     color: var(--color-white-blue);
  }
  
  .text-darkBrown {
@@ -501,15 +502,11 @@
     }
 
 .text-navbar {
-    color: white; 
+    color: var(--color-neutral-gray) !important; 
   }
 
- .hover\:text-navbar:hover {
-     color: var(--color-gold);
- }
- 
- .hover\:text-darkBrown:hover {
-     color: var(--color-dark-brown);
+ .text-navbar:hover {
+     color: var(--color-white-blue) !important;
  }
  
  /* Typography */
@@ -794,6 +791,7 @@
  .card:hover {
      transform: translateY(-5px);
      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.1);
+     border-color: #3a3a3a;
  }
  
  .card-dark {
@@ -887,6 +885,22 @@ section .card,
 
 .bg-gray-200 {
     background-color: #2a2a2a !important;
+}
+
+.funnel-button {
+    background-color: var(--color-gold);
+    color: var(--color-snow-white);
+    border-radius: 50%;
+    padding: 0.5rem;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+}
+.funnel-button:hover {
+    opacity: 0.5;
+    transform: translateY(-3px);
 }
 
 .text-white {
@@ -1129,6 +1143,7 @@ textarea.dark-input {
 .social-icon {
     color: var(--color-text-secondary);
     transition: color 0.3s ease;
+    text-decoration: none;
 }
 
 .social-icon:hover {
@@ -1170,18 +1185,8 @@ textarea.dark-input {
     background-color: var(--color-gold-hover);
 }
 
-/* Variáveis adicionais necessárias */
-:root {
-    /* Adicione estas variáveis ao seu :root existente */
-    --color-back-input: #252728;
-    --color-border: #313233;
-    --color-text-secondary: #b0b0b0;
-    --color-gold-hover: #003a4b;
-}
-
 .back-to-top-btn {
     background-color: var(--color-gold);
-    opacity: 0.1;
     color: var(--color-white-blue);
     border-radius: 50%;
     padding: 0.5rem;
@@ -1192,7 +1197,7 @@ textarea.dark-input {
 }
 
 .back-to-top-btn:hover {
-    opacity: 0.2;
+    opacity: 0.5;
     transform: translateY(-3px);
 }
 
