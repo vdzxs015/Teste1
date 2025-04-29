@@ -1742,6 +1742,56 @@ textarea.dark-input {
       gap: 0.5rem;
     }
   }
+/* Responsive styles for the Funnel Marketing section */
+@media (max-width: 768px) {
+    /* Funnel section */
+    #funnel-info {
+      display: flex;
+      flex-direction: column;
+    }
+    
+    /* Move buttons to the top on mobile */
+    #funnel-info .flex {
+      order: -1;
+      margin-top: 0;
+      margin-bottom: 2rem;
+    }
+    
+    /* Adjust SVG size */
+    #funnel-svg {
+      max-width: 90%;
+    }
+    
+    /* Adjust text in the funnel */
+    #funnel-svg text {
+      font-size: 14px;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Create more spacing between buttons */
+    #funnel-info .flex {
+      justify-content: space-around;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+    
+    /* Make buttons slightly larger for better touch targets */
+    .funnel-button {
+      width: 3rem !important;
+      height: 3rem !important;
+    }
+    
+    /* Adjust title and description */
+    #step-title {
+      font-size: 1.5rem;
+      text-align: center;
+    }
+    
+    #step-description {
+      text-align: center;
+    }
+  }
 
  @media (min-width: 1024px) {
      .grid {
