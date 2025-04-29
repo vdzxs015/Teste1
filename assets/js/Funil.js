@@ -5,13 +5,13 @@ function changeStep(element) {
     
     // Reset all buttons to inactive state
     stepButtons.forEach(button => {
-        button.classList.remove('bg-gold', 'text-white');
+        button.classList.remove('bg-blue', 'text-white');
         button.classList.add('bg-gray-200', 'text-gray-600');
     });
     
     // Set clicked button to active state
     element.classList.remove('bg-gray-200', 'text-gray-600');
-    element.classList.add('bg-gold', 'text-white');
+    element.classList.add('bg-blue', 'text-white');
     
     // Get data attributes
     const step = element.getAttribute('data-step');

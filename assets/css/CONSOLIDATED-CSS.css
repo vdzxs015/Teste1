@@ -11,7 +11,7 @@
  :root {
      --color-matt-black: #1a1a1a;
      --color-snow-white: #f8f8f8;
-     --color-gold: #002d3c;
+     --color-blue: #002d3c;
      --color-white-blue: #308491;
      --color-neutral-gray: #a0a0a0;
      --color-background: #202122;
@@ -19,7 +19,7 @@
      --color-back-input: #252728;
      --color-border: #313233;
      --color-text-secondary: #b0b0b0;
-     --color-gold-hover: #003a4b;
+     --color-blue-hover: #003a4b;
  }
  
  * {
@@ -438,8 +438,8 @@
      background-color: var(--color-snow-white);
  }
  
- .bg-gold {
-     background-color: var(--color-gold);
+ .bg-blue {
+     background-color: var(--color-blue);
  }
  
  .bg-gray-200 {
@@ -473,7 +473,7 @@
      height: 100%;
  }
  
- .text-gold {
+ .text-blue {
      color: var(--color-white-blue);
  }
  
@@ -580,11 +580,11 @@
  }
  
  .focus\:ring-2:focus {
-     box-shadow: 0 0 0 2px var(--color-gold);
+     box-shadow: 0 0 0 2px var(--color-blue);
  }
  
- .focus\:ring-gold:focus {
-     box-shadow: 0 0 0 2px var(--color-gold);
+ .focus\:ring-blue:focus {
+     box-shadow: 0 0 0 2px var(--color-blue);
  }
  
  /* Shadows */
@@ -728,7 +728,7 @@
  /* Buttons */
  .button {
      display: inline-block;
-     background-color: var(--color-gold);
+     background-color: var(--color-blue);
      color: var(--color-snow-white);
      font-size: 1.125rem;
      padding: 0.75rem 1.5rem;
@@ -858,12 +858,12 @@ section .card,
     color: rgba(255, 255, 255, 0.7) !important;
 }
 
-.card .text-gold,
+.card .text-blue,
 .card svg {
     color: #4babff !important;
 }
 
-.card .bg-gold.bg-opacity-10,
+.card .bg-blue.bg-opacity-10,
 .card .bg-card.bg-opacity-10 {
     background-color: rgba(75, 171, 255, 0.1) !important;
     border: 1px solid rgba(75, 171, 255, 0.2) !important;
@@ -888,7 +888,7 @@ section .card,
 }
 
 .funnel-button {
-    background-color: var(--color-gold);
+    background-color: var(--color-blue);
     color: var(--color-snow-white);
     border-radius: 50%;
     padding: 0.5rem;
@@ -942,7 +942,7 @@ section .card,
  }
  
  .circle:hover {
-     box-shadow: 0 0 0 4px var(--color-white-blue), 0 0 0 8px var(--color-gold);
+     box-shadow: 0 0 0 4px var(--color-white-blue), 0 0 0 8px var(--color-blue);
      transform: scale(1.1);
  }
  
@@ -1171,7 +1171,7 @@ textarea.dark-input {
 }
 
 .newsletter-btn {
-    background-color: var(--color-gold);
+    background-color: var(--color-blue);
     color: var(--color-snow-white);
     border: none;
     padding: 0 1.5rem;
@@ -1182,11 +1182,11 @@ textarea.dark-input {
 }
 
 .newsletter-btn:hover {
-    background-color: var(--color-gold-hover);
+    background-color: var(--color-blue-hover);
 }
 
 .back-to-top-btn {
-    background-color: var(--color-gold);
+    background-color: var(--color-blue);
     color: var(--color-white-blue);
     border-radius: 50%;
     padding: 0.5rem;
