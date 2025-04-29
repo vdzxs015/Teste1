@@ -456,14 +456,7 @@
  .bg-dark {
      background-color: var(--color-background);
  }
- 
- .hover\:bg-opacity-20:hover {
-     opacity: 0.2;
- }
- 
- .bg-opacity-10 {
-     opacity: 0.1;
- }
+
  
  .bg-cover {
      background-position: center center;
@@ -477,15 +470,12 @@
      color: var(--color-white-blue);
  }
  
- .text-darkBrown {
-     color: var(--color-dark-brown);
- }
  
  .text-snowWhite {
      color: var(--color-snow-white);
  }
  
- .text-neutralGray {
+ .text-snowWhite {
      color: var(--color-snow-white);
  }
  
@@ -863,8 +853,8 @@ section .card,
     color: #4babff !important;
 }
 
-.card .bg-blue.bg-opacity-10,
-.card .bg-card.bg-opacity-10 {
+.card .bg-blue,
+.card .bg-card {
     background-color: rgba(75, 171, 255, 0.1) !important;
     border: 1px solid rgba(75, 171, 255, 0.2) !important;
 }
@@ -1100,7 +1090,11 @@ section .card,
  .zoom {
      transform: scale(1.1);
  }
- 
+
+ .gestao {
+    min-height: 395px;
+ }
+
  .pointer {
      cursor: pointer;
  }
