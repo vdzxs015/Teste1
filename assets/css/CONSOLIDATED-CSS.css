@@ -1829,3 +1829,103 @@ textarea.dark-input {
          height: 950px;
      }
  }
+/* Portfolio Carousel Styles for Mobile */
+@media (max-width: 767px) {
+    /* Change to single column layout */
+    #portfólio .grid-cols-1.md\:grid-cols-2 {
+      display: block;
+    }
+    
+    /* Style for carousel containers */
+    .portfolio-left,
+    .portfolio-right {
+      position: relative;
+      margin-bottom: 3rem;
+    }
+    
+    /* Hide grid layout on mobile */
+    .portfolio-left .grid-cols-2,
+    .portfolio-right .grid-cols-2 {
+      display: none;
+    }
+    
+    /* Carousel container */
+    .carousel-container {
+      position: relative;
+      width: 100%;
+      overflow: hidden;
+    }
+    
+    /* Carousel track */
+    .carousel-track {
+      display: flex;
+      transition: transform 0.3s ease;
+      width: 100%;
+    }
+    
+    /* Carousel slide */
+    .carousel-slide {
+      flex: 0 0 100%;
+      width: 100%;
+      padding: 0 0.5rem;
+    }
+    
+    /* Carousel navigation */
+    .carousel-nav {
+      display: flex;
+      justify-content: center;
+      margin-top: 1rem;
+    }
+    
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background-color: #3a3a3a;
+      margin: 0 5px;
+      cursor: pointer;
+      transition: background-color 0.3s ease;
+    }
+    
+    .carousel-dot.active {
+      background-color: var(--color-white-blue);
+    }
+    
+    /* Carousel controls */
+    .carousel-controls {
+      position: absolute;
+      top: 50%;
+      left: 0;
+      right: 0;
+      transform: translateY(-50%);
+      display: flex;
+      justify-content: space-between;
+      padding: 0 10px;
+      pointer-events: none;
+    }
+    
+    .carousel-button {
+      background-color: var(--color-white-blue);
+      color: white;
+      width: 32px;
+      height: 32px;
+      border-radius: 50%;
+      border: none;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      cursor: pointer;
+      pointer-events: auto;
+      opacity: 0.8;
+      transition: opacity 0.3s ease;
+    }
+    
+    .carousel-button:hover {
+      opacity: 1;
+    }
+    
+    /* Adjust height for mobile */
+    .carousel-slide .group .overflow-hidden img {
+      height: 250px;
+    }
+  }
