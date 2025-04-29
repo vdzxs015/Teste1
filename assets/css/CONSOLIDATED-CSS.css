@@ -1574,7 +1574,175 @@ textarea.dark-input {
          font-size: 2.25rem;
      }
  }
- 
+ /* Responsive styles for the inicio section */
+@media (max-width: 1024px) {
+    #inicio .grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    #inicio .title,
+    #inicio .title-mkt {
+      font-size: 3rem;
+    }
+    
+    #inicio .order-lg-1,
+    #inicio .order-lg-2 {
+      order: 0;
+    }
+    
+    #inicio .fade-in-right {
+      margin-top: 2rem;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    #inicio .title,
+    #inicio .title-mkt {
+      font-size: 2.5rem;
+    }
+    
+    #inicio p {
+      font-size: 1rem;
+    }
+    
+    #inicio .btn-primary {
+      font-size: 0.9rem;
+      padding: 0.6rem 1.2rem;
+    }
+    
+    #inicio .container-custom {
+      padding: 3rem 0;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    #inicio .title,
+    #inicio .title-mkt {
+      font-size: 2rem;
+    }
+    
+    #inicio .relative img {
+      max-width: 90%;
+    }
+    
+    #inicio .fade-in-left,
+    #inicio .fade-in-right {
+      animation-delay: 0.1s;
+    }
+  }
+/* Responsive styles for Contact section and Footer */
+@media (max-width: 992px) {
+    /* Contact section */
+    .contact-grid {
+      grid-template-columns: 1fr;
+      gap: 2rem;
+    }
+    
+    .contact-form-wrapper,
+    .contact-info-wrapper {
+      width: 100%;
+    }
+    
+    /* Footer */
+    .footer-row {
+      flex-direction: column;
+    }
+    
+    .footer-col {
+      width: 100%;
+      margin-bottom: 2rem;
+    }
+    
+    .social-icons {
+      justify-content: flex-start;
+    }
+  }
+  
+  @media (max-width: 768px) {
+    /* Contact section */
+    .contact-info-items {
+      gap: 1rem;
+    }
+    
+    .contact-info-item {
+      flex-direction: column;
+    }
+    
+    .contact-info-item svg {
+      margin-bottom: 0.5rem;
+    }
+    
+    /* Footer */
+    .footer-row {
+      gap: 1.5rem;
+    }
+    
+    .newsletter-form {
+      flex-direction: column;
+    }
+    
+    .newsletter-input {
+      width: 100%;
+      border-radius: 0.375rem;
+      border-right: 1px solid var(--color-border);
+      margin-bottom: 0.5rem;
+    }
+    
+    .newsletter-btn {
+      width: 100%;
+      border-radius: 0.375rem;
+      padding: 0.75rem;
+    }
+    
+    .border-t .flex {
+      flex-direction: column;
+      text-align: center;
+    }
+    
+    .border-t .social-icon {
+      margin: 0.5rem;
+    }
+  }
+  
+  @media (max-width: 576px) {
+    /* Contact section */
+    .section-title {
+      font-size: 2rem;
+    }
+    
+    .section-subtitle {
+      font-size: 1rem;
+    }
+    
+    .dark-form,
+    .contact-info {
+      padding: 1.5rem;
+    }
+    
+    /* Footer */
+    .footer-heading {
+      font-size: 1.1rem;
+    }
+    
+    .social-icons {
+      flex-wrap: wrap;
+    }
+    
+    .social-icons a {
+      margin-bottom: 0.5rem;
+    }
+    
+    .container-custom.py-16 {
+      padding-top: 3rem;
+      padding-bottom: 3rem;
+    }
+    
+    .border-t .flex {
+      gap: 0.5rem;
+    }
+  }
+
  @media (min-width: 1024px) {
      .grid {
          grid-template-columns: 1fr 1fr;
