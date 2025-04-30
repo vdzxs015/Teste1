@@ -703,12 +703,16 @@
  
  .title {
      color: var(--color-snow-white);
-     font-size: 3.7rem;
+     font-size: 3rem;
      font-weight: 300;
      line-height: 1.2;
      margin-bottom: 1.5rem;
  }
  
+.sobrenos {
+    min-height: 541px;
+}
+
  p {
      font-size: 1.125rem;
      margin-bottom: 2rem;
@@ -755,6 +759,127 @@
      padding: 5rem 0;
  }
  
+.dot {
+    position: absolute;
+    width: 4px;
+    height: 4px;
+    background-color: rgba(255, 255, 255, 0.1);
+    border-radius: 50%;
+}
+
+/* Positioning some decorative dots */
+.dot:nth-child(1) { top: 10%; left: 5%; }
+.dot:nth-child(2) { top: 20%; left: 15%; }
+.dot:nth-child(3) { top: 30%; right: 10%; }
+.dot:nth-child(4) { top: 80%; left: 20%; }
+.dot:nth-child(5) { top: 70%; right: 15%; }
+.dot:nth-child(6) { bottom: 10%; left: 40%; }
+
+
+.strategy-features {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.feature-card {
+    background-color: var(--color-back-card);
+    border-radius: 0.75rem;
+    padding: 1.5rem;
+    display: flex;
+    align-items: flex-start;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: 1px solid var(--color-border);
+    height: 100%;
+}
+
+.feature-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.2);
+    border-color: var(--color-white-blue);
+}
+
+.check-circle {
+    width: 48px;
+    height: 48px;
+    min-width: 48px;
+    background-color: rgba(48, 132, 145, 0.1);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 1rem;
+    transition: all 0.3s ease;
+}
+
+.feature-card:hover .check-circle {
+    background-color: rgba(48, 132, 145, 0.2);
+    transform: scale(1.1);
+}
+
+.check-icon {
+    width: 24px;
+    height: 24px;
+    color: var(--color-white-blue);
+    transition: color 0.3s ease;
+}
+
+.feature-card:hover .check-icon {
+    color: #4babff;
+}
+
+.feature-content {
+    flex-grow: 1;
+}
+
+.feature-title {
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--color-white-blue);
+    margin-bottom: 0.5rem;
+}
+
+.feature-description {
+    color: var(--color-snow-white);
+    font-size: 1rem;
+    line-height: 1.5;
+}
+
+.feature-description strong {
+    color: var(--color-white-blue);
+    font-weight: 600;
+}
+
+@media (max-width: 1024px) {
+    .strategy-features {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    .strategy-title {
+        font-size: 2rem;
+    }
+    
+    .strategy-features {
+        grid-template-columns: 1fr;
+    }
+    
+    .feature-card {
+        padding: 1.25rem;
+    }
+    
+    .check-circle {
+        width: 42px;
+        height: 42px;
+        min-width: 42px;
+    }
+    
+    .feature-title {
+        font-size: 1.2rem;
+    }
+}
+
  .section-title {
      font-size: 2.5rem;
      font-weight: bold;
