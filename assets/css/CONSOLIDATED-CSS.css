@@ -1095,6 +1095,15 @@ section .card,
     min-height: 395px;
  }
 
+.ia{
+    min-height: 342px;
+}
+
+.text-ia {
+    padding: 2%;
+    margin-top: 2%;
+}
+
  .pointer {
      cursor: pointer;
  }
@@ -1826,7 +1835,8 @@ textarea.dark-input {
      }
      
      .single_slider {
-         height: 950px;
+        min-height: 100vh;
+
      }
  }
 /* Portfolio Carousel Styles for Mobile */
