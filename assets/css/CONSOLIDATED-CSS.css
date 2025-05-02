@@ -1326,6 +1326,33 @@ section .card,
     margin-bottom: 0.5rem;
 }
 
+/* Estilização para mostrar mensagens de erro */
+.form-group {
+    position: relative;
+    margin-bottom: 25px; /* Aumentando o espaço para acomodar a mensagem de erro */
+  }
+  
+  .form-group small {
+    position: absolute;
+    bottom: -20px; /* Posiciona abaixo do input */
+    left: 0;
+    color: #e74c3c; /* Cor vermelha para erros */
+    font-size: 0.8rem;
+    visibility: hidden; /* Inicialmente oculto */
+  }
+  
+  .form-group.error small {
+    visibility: visible; /* Torna visível quando há erro */
+  }
+  
+  .form-group.error .dark-input {
+    border-color: #e74c3c; /* Borda vermelha para inputs com erro */
+  }
+  
+  .form-group.success .dark-input {
+    border-color: #2ecc71; /* Borda verde para inputs com sucesso */
+  }
+  
 .dark-input {
     width: 100%;
     padding: 0.75rem 1rem;
