@@ -1083,7 +1083,9 @@ section .card,
 }
 
 .btn-project:hover {
-    color: var(--color-blue);
+    color: var(--color-blue-hover);
+    font-weight: bold;
+    transition: all 0.3s ease;
 }
 
 .btn-project svg {
@@ -1255,6 +1257,7 @@ section .card,
  
  .group:hover .project-overlay {
      opacity: 0.9;
+     visibility: visible;
  }
  
  .group:hover img {
