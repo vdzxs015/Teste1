@@ -685,8 +685,16 @@
      opacity: 1;
  }
  
+.menu-border {
+    outline: var(--color-white-blue) solid 0.1rem;
+}
+.menu-image {
+    background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 30 30'%3e%3cpath stroke='rgb(48, 132, 145)' stroke-linecap='round' stroke-miterlimit='10' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e") !important;
+}
+ 
  /* Home Section */
  #inicio {
+    background-color: var(--color-background);
      min-height: 100vh;
      display: flex;
      align-items: center;
@@ -754,6 +762,13 @@
      transform: scale(0.95);
  }
  
+.enviar-center {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+}
+
  /* About Section */
  #sobre {
      padding: 5rem 0;
