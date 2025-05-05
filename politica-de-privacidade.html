@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFNC Business</title>
+    <!-- Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/CONSOLIDATED-CSS.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/img/LOGO_FINAL5.png">
+    <script src="./assets/js/Funil.js"></script>
+    <script src="./assets/js/Portfolio.js"></script>
+    <script src="./assets/js/Contato.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --color-matt-black: #1a1a1a;
+            --color-snow-white: #f8f8f8;
+            --color-blue: #002d3c;
+            --color-white-blue: #308491;
+            --color-neutral-gray: #a0a0a0;
+            --color-background: #202122;
+            --color-back-card: #1B1D1D;
+            --color-back-input: #252728;
+            --color-border: #313233;
+            --color-text-secondary: #b0b0b0;
+            --color-blue-hover: #003a4b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: var(--color-matt-black);
+            background-color: var(--color-background);
+        }
+
+        /* Conteúdo da Política */
+        .policy-section {
+            padding-top: 120px;
+            /* Espaço para o cabeçalho fixo */
+        }
+
+        .policy-container {
+            background-color: var(--color-back-card);
+            border-radius: 1rem;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: var(--color-white-blue);
+            text-align: center;
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--color-snow-white);
+            text-align: center;
+        }
+
+        .policy-content h2 {
+            font-size: 1.75rem;
+            color: var(--color-white-blue);
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+
+        .policy-content h2:first-child {
+            margin-top: 0;
+        }
+
+        .policy-content p {
+            margin-bottom: 1.5rem;
+            color: var(--color-snow-white);
+            font-size: 1.1rem;
+            max-width: 100%;
+        }
+
+        .policy-content ul {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+
+        .policy-content li {
+            margin-bottom: 0.5rem;
+            color: var(--color-snow-white);
+        }
+
+        .policy-content a {
+            color: var(--color-white-blue);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+
+        .policy-content a:hover {
+            color: var(--color-snow-white);
+            text-decoration: underline;
+        }
+
+        .policy-date {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--color-border);
+            font-style: italic;
+            color: var(--color-text-secondary);
+        }
+
+        .button {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: #2c9caf;
+            transition: all 1000ms;
+            font-size: 15px;
+            position: relative;
+            overflow: hidden;
+            outline: 2px solid #2c9caf;
+        }
+
+        button:hover {
+            color: #ffffff;
+            transform: scale(1.1);
+            outline: 2px solid #70bdca;
+            box-shadow: 4px 5px 17px -4px #268391;
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            left: -50px;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background-color: #2c9caf;
+            transform: skewX(45deg);
+            z-index: -1;
+            transition: width 1000ms;
+        }
+
+        button:hover::before {
+            width: 250%;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header" class="header header-animated bg-transparent">
+        <nav class="navbar navbar-expand-lg" style="background-color: #242728;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/LOGO_FINAL5.png" width="128" height="128" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="h-8 w-8 text-blue mr-2" alt="Logo IFNC Business" class="logo">
+                    <span class="font-title">IFNC Business</span>
+                </a>
+                <button class="navbar-toggler menu-border" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon menu-image"></span>
+                </button>
+                <div class="collapse navbar-collapse col-6" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-navbar transition-al" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-navbar transition-al" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-navbar transition-al" href="#serviços">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-navbar transition-al" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-custom">
+        <h1 class="section-title">Política de Privacidade</h1>
+        <p class="section-subtitle">
+            Nosso compromisso com a segurança e privacidade dos seus dados
+        </p>
+
+        <div class="policy-content">
+            <h2>Introdução</h2>
+            <p>A sua privacidade é importante para nós. É política do IFNC Business respeitar a sua privacidade em
+                relação a qualquer informação sua que possamos coletar no site IFNC Business (ifncbusiness.com.br), e
+                outros sites que possuímos e operamos.</p>
+
+            <h2>Coleta de Informações</h2>
+            <p>Solicitamos informações pessoais apenas quando realmente precisamos delas para lhe fornecer um serviço.
+                Fazemos isso por meios justos e legais, com o seu conhecimento e consentimento. Também informamos por
+                que estamos coletando e como será usado.</p>
+            <p>Os tipos de informações pessoais que coletamos podem incluir:</p>
+            <ul>
+                <li>Nome completo</li>
+                <li>Endereço de e-mail</li>
+                <li>Número de telefone</li>
+                <li>Nome da empresa</li>
+                <li>Mensagens enviadas através de nossos formulários de contato</li>
+            </ul>
+
+            <h2>Uso das Informações</h2>
+            <p>Utilizamos as informações coletadas para:</p>
+            <ul>
+                <li>Responder às suas solicitações e perguntas</li>
+                <li>Fornecer os serviços solicitados</li>
+                <li>Enviar comunicações de marketing e newsletter (sempre com opção de cancelamento)</li>
+                <li>Melhorar nosso site e serviços</li>
+                <li>Cumprir obrigações legais</li>
+            </ul>
+
+            <h2>Retenção de Dados</h2>
+            <p>Apenas retemos as informações coletadas pelo tempo necessário para fornecer o serviço solicitado. Quando
+                armazenamos dados, protegemos dentro de meios comercialmente aceitáveis para evitar perdas e roubos, bem
+                como acesso, divulgação, cópia, uso ou modificação não autorizados.</p>
+
+            <h2>Compartilhamento de Informações</h2>
+            <p>Não compartilhamos informações de identificação pessoal publicamente ou com terceiros, exceto:</p>
+            <ul>
+                <li>Quando exigido por lei</li>
+                <li>Com serviços de terceiros confiáveis que nos ajudam em nossas operações de negócios (como o n8n para
+                    processamento de mensagens)</li>
+            </ul>
+            <p>Estes terceiros concordaram em manter a confidencialidade das informações e usá-las apenas para os fins
+                específicos que lhes foram designados.</p>
+
+            <h2>Processamento Automatizado</h2>
+            <p>Utilizamos tecnologias de automação e inteligência artificial para melhorar nossos serviços, como a
+                geração de conteúdo para newsletters. Este processamento automatizado é projetado para fornecer conteúdo
+                relevante e personalizado.</p>
+
+            <h2>Links Externos</h2>
+            <p>O nosso site pode ter links para sites externos que não são operados por nós. Esteja ciente de que não
+                temos controle sobre o conteúdo e práticas desses sites e não podemos aceitar responsabilidade por suas
+                respectivas políticas de privacidade.</p>
+
+            <h2>Seus Direitos</h2>
+            <p>Você tem os seguintes direitos relacionados aos seus dados pessoais:</p>
+            <ul>
+                <li>Acesso às informações que temos sobre você</li>
+                <li>Correção de informações imprecisas</li>
+                <li>Exclusão de seus dados (sujeito a certas exceções legais)</li>
+                <li>Objeção ao uso de seus dados para certos fins</li>
+                <li>Recebimento de seus dados em formato utilizável para transferência a outro prestador de serviços
+                </li>
+            </ul>
+            <p>Para exercer qualquer um desses direitos, entre em contato conosco através dos dados fornecidos no final
+                desta política.</p>
+
+            <h2>Recusa de Informações</h2>
+            <p>Você é livre para recusar a nossa solicitação de informações pessoais, entendendo que talvez não possamos
+                fornecer alguns dos serviços desejados.</p>
+
+            <h2>Cookies e Tecnologias Semelhantes</h2>
+            <p>Atualmente, o IFNC Business não utiliza cookies para rastreamento de usuários. No entanto, caso esta
+                política seja alterada no futuro, forneceremos informações detalhadas sobre como e por que os
+                utilizamos.</p>
+
+            <h2>Compromisso do Usuário</h2>
+            <p>O usuário se compromete a fazer uso adequado dos conteúdos e da informação que o IFNC Business oferece no
+                site e com caráter enunciativo, mas não limitativo:</p>
+            <ul>
+                <li>A) Não se envolver em atividades que sejam ilegais ou contrárias à boa fé e à ordem pública;</li>
+                <li>B) Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, casas de apostas ou azar,
+                    qualquer tipo de pornografia ilegal, de apologia ao terrorismo ou contra os direitos humanos;</li>
+                <li>C) Não causar danos aos sistemas físicos (hardwares) e lógicos (softwares) do IFNC Business, de seus
+                    fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros
+                    sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.</li>
+            </ul>
+
+            <h2>Alterações à Política de Privacidade</h2>
+            <p>Reservamo-nos o direito de modificar esta política de privacidade a qualquer momento. As alterações
+                entrarão em vigor imediatamente após a publicação no site. Recomendamos que você verifique esta página
+                periodicamente para se manter informado sobre quaisquer alterações.</p>
+
+            <h2>Contato</h2>
+            <p>Se você tiver alguma dúvida sobre esta política de privacidade ou sobre como lidamos com seus dados,
+                entre em contato conosco:</p>
+            <ul>
+                <li>E-mail: contato@ifnc.com.br</li>
+                <li>Telefone: (15) 99615-6506</li>
+                <li>Endereço: Rua São Francisco, 7, Capela do Alto, SP - Brasil</li>
+            </ul>
+
+            <p class="policy-date">Esta política é efetiva a partir de 5 de maio de 2025.</p>
+            <center>
+                <a href="./index.html">
+                    <button class="button">Voltar</button>
+                </a>
+
+        </div>
+    </div>
+    <footer class="dark-footer">
+        <div class="container-custom py-16">
+            <div class="footer-row">
+                <!-- IFNC Business -->
+                <div class="footer-col">
+                    <div class="flex items-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon-blue mr-2">
+                            <path
+                                d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z">
+                            </path>
+                            <path d="M5 3v4"></path>
+                            <path d="M19 17v4"></path>
+                            <path d="M3 5h4"></path>
+                            <path d="M17 19h4"></path>
+                        </svg>
+                        <span class="footer-brand-text">IFNC Business</span>
+                    </div>
+                    <p class="footer-text">
+                        Transformando negócios através do marketing digital com empatia, inovação e estratégia.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=100092462174879"
+                            class="text-snowWhite hover:text-blue transition-colors circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/ifncbusiness"
+                            class="text-snowWhite hover:text-blue transition-colors circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fredericolc?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            class="text-snowWhite hover:text-blue transition-colors circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@FlickerVideo"
+                            class="text-snowWhite hover:text-blue transition-colors circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
+                                </path>
+                                <path d="m10 15 5-3-5-3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Serviços -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Serviços</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#portfólio" class="social-icon">Criação de Marcas</a></li>
+                        <li><a href="#portfólio" class="social-icon">Desenvolvimento Web</a></li>
+                        <li><a href="#serviços" class="social-icon">Produção Audiovisual</a></li>
+                        <li><a href="#gestao" class="social-icon">Gestão de Tráfego</a></li>
+                        <li><a href="#ia" class="social-icon">Soluções em IA</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links Úteis -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Links Úteis</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#sobre" class="social-icon">Sobre Nós</a></li>
+                        <li><a href="#" class="social-icon">Blog</a></li>
+                        <li><a href="#sobre" class="social-icon">Carreiras</a></li>
+                        <li><a href="#serviços" class="social-icon">Parcerias</a></li>
+                        <li><a href="#portfólio" class="social-icon">Casos de Sucesso</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-text">
+                        Inscreva-se para receber nossas atualizações e conteúdos exclusivos.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" class="newsletter-input" />
+                        <button type="submit" class="newsletter-btn">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="footer-text text-sm mb-4 md:mb-0">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> IFNC Business. Todos os direitos
+                    reservados.
+                </p>
+                <div class="flex items-center">
+                    <a href="./termos-de-uso.html" class="social-icon text-sm mr-6">Termos de Uso</a>
+                    <a href="./politica-de-privacidade.html" class="social-icon text-sm mr-6">Política de
+                        Privacidade</a>
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="back-to-top-btn"
+                        aria-label="Voltar ao topo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m18 15-6-6-6 6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>

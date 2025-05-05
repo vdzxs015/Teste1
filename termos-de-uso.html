@@ -1,0 +1,432 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IFNC Business</title>
+    <!-- Font imports -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Inter:wght@400;500;600&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="./assets/css/CONSOLIDATED-CSS.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
+    <link rel="shortcut icon" href="./assets/img/LOGO_FINAL5.png">
+    <script src="./assets/js/Funil.js"></script>
+    <script src="./assets/js/Portfolio.js"></script>
+    <script src="./assets/js/Contato.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq"
+        crossorigin="anonymous"></script>
+    <style>
+        :root {
+            --color-matt-black: #1a1a1a;
+            --color-snow-white: #f8f8f8;
+            --color-blue: #002d3c;
+            --color-white-blue: #308491;
+            --color-neutral-gray: #a0a0a0;
+            --color-background: #202122;
+            --color-back-card: #1B1D1D;
+            --color-back-input: #252728;
+            --color-border: #313233;
+            --color-text-secondary: #b0b0b0;
+            --color-blue-hover: #003a4b;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Poppins', sans-serif;
+        }
+
+        body {
+            color: var(--color-matt-black);
+            background-color: var(--color-background);
+        }
+
+        .terms-section {
+            padding-top: 120px; /* Espaço para o cabeçalho fixo */
+        }
+        
+        .terms-container {
+            background-color: var(--color-back-card);
+            border-radius: 1rem;
+            padding: 3rem;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+        }
+        
+        .section-title {
+            font-size: 2.5rem;
+            font-weight: bold;
+            margin-bottom: 1.5rem;
+            color: var(--color-white-blue);
+            text-align: center;
+        }
+        
+        .section-subtitle {
+            font-size: 1.125rem;
+            max-width: 700px;
+            margin: 0 auto 2rem;
+            color: var(--color-snow-white);
+            text-align: center;
+        }
+        
+        .terms-content h2 {
+            font-size: 1.75rem;
+            color: var(--color-white-blue);
+            margin: 2.5rem 0 1rem;
+            padding-bottom: 0.5rem;
+            border-bottom: 1px solid var(--color-border);
+        }
+        
+        .terms-content h2:first-child {
+            margin-top: 0;
+        }
+        
+        .terms-content p {
+            margin-bottom: 1.5rem;
+            color: var(--color-snow-white);
+            font-size: 1.1rem;
+            max-width: 100%;
+        }
+        
+        .terms-content ul, .terms-content ol {
+            margin-bottom: 1.5rem;
+            padding-left: 2rem;
+        }
+        
+        .terms-content li {
+            margin-bottom: 0.5rem;
+            color: var(--color-snow-white);
+        }
+        
+        .terms-content a {
+            color: var(--color-white-blue);
+            text-decoration: none;
+            transition: all 0.3s ease;
+        }
+        
+        .terms-content a:hover {
+            color: var(--color-snow-white);
+            text-decoration: underline;
+        }
+        
+        .terms-date {
+            margin-top: 3rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid var(--color-border);
+            font-style: italic;
+            color: var(--color-text-secondary);
+        }
+
+        .button {
+            margin-left: auto;
+            margin-right: auto;
+            padding: 1em 2em;
+            border: none;
+            border-radius: 5px;
+            font-weight: bold;
+            letter-spacing: 5px;
+            text-transform: uppercase;
+            cursor: pointer;
+            color: #2c9caf;
+            transition: all 1000ms;
+            font-size: 15px;
+            position: relative;
+            overflow: hidden;
+            outline: 2px solid #2c9caf;
+        }
+
+        button:hover {
+            color: #ffffff;
+            transform: scale(1.1);
+            outline: 2px solid #70bdca;
+            box-shadow: 4px 5px 17px -4px #268391;
+        }
+
+        button::before {
+            content: "";
+            position: absolute;
+            left: -50px;
+            top: 0;
+            width: 0;
+            height: 100%;
+            background-color: #2c9caf;
+            transform: skewX(45deg);
+            z-index: -1;
+            transition: width 1000ms;
+        }
+
+        button:hover::before {
+            width: 250%;
+        }
+    </style>
+</head>
+<body>
+    <header id="main-header" class="header header-animated bg-transparent">
+        <nav class="navbar navbar-expand-lg" style="background-color: #242728;">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#">
+                    <img src="./assets/img/LOGO_FINAL5.png" width="128" height="128" viewBox="0 0 24 24" fill="none"
+                        stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                        class="h-8 w-8 text-blue mr-2" alt="Logo IFNC Business" class="logo">
+                    <span class="font-title">IFNC Business</span>
+                </a>
+                <button class="navbar-toggler menu-border" type="button" data-bs-toggle="collapse"
+                    data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon menu-image"></span>
+                </button>
+                <div class="collapse navbar-collapse col-6" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <a class="nav-link text-navbar transition-al" href="#inicio">Início</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-navbar transition-al" href="#sobre">Sobre</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-navbar transition-al" href="#serviços">Serviços</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link text-navbar transition-al" href="#contato">Contato</a>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </header>
+    <div class="container-custom">
+            <h1 class="section-title">Termos de Uso</h1>
+            <p class="section-subtitle">
+                Por favor, leia com atenção estes termos antes de acessar ou utilizar nossos serviços
+            </p>
+
+            <div class="terms-content">
+                <div class="highlight-box">
+                    <p>Ao acessar ou utilizar o site da IFNC Business, você concorda em cumprir e estar sujeito a estes Termos de Uso. Se você não concordar com qualquer parte destes termos, não deverá acessar ou utilizar nossos serviços.</p>
+                </div>
+
+                <h2>1. Introdução</h2>
+                <p>Estes Termos de Uso regulam o acesso e a utilização do site IFNC Business (ifncbusiness.com.br), bem como de todos os serviços oferecidos através dele, incluindo, mas não se limitando a desenvolvimento de sites, criação de marcas, gestão de tráfego pago, produção audiovisual e soluções em inteligência artificial.</p>
+
+                <h2>2. Acesso ao Site</h2>
+                <p>O acesso ao site da IFNC Business é livre para consulta de informações sobre nossos serviços e portfólio. No entanto, algumas áreas e funcionalidades do site podem estar restritas a usuários cadastrados ou clientes.</p>
+                <p>A IFNC Business se reserva o direito de modificar, suspender ou interromper, temporária ou permanentemente, o site ou qualquer parte dele, a qualquer momento e sem aviso prévio, sem que isso gere direito a indenização.</p>
+
+                <h2>3. Cadastro e Informações de Usuário</h2>
+                <p>Para utilizar determinados serviços ou funcionalidades, pode ser necessário realizar um cadastro. Neste caso, você concorda em fornecer informações precisas, atuais e completas, conforme solicitado nos formulários de cadastro.</p>
+                <p>Você é responsável por manter a confidencialidade de suas informações de conta, incluindo sua senha, e por todas as atividades realizadas com sua conta. Você deve notificar imediatamente a IFNC Business sobre qualquer uso não autorizado da sua conta ou qualquer outra violação de segurança.</p>
+
+                <h2>4. Propriedade Intelectual</h2>
+                <p>Todo o conteúdo disponível no site da IFNC Business, incluindo textos, imagens, logotipos, marcas, vídeos, design, software e código-fonte, é de propriedade da IFNC Business ou de seus parceiros, fornecedores ou licenciantes, e está protegido por leis de propriedade intelectual.</p>
+                <p>Você não pode copiar, modificar, distribuir, vender, alugar ou explorar de qualquer forma o conteúdo do site sem prévia autorização por escrito da IFNC Business.</p>
+
+                <h2>5. Serviços e Contratação</h2>
+                <p>Os serviços oferecidos pela IFNC Business estão descritos no site e poderão ser contratados mediante solicitação de orçamento através dos canais de contato disponibilizados.</p>
+                <p>A contratação de serviços será formalizada por meio de contrato específico ou proposta comercial aceita, que estabelecerá as condições particulares, prazos, valores e demais detalhes relacionados ao serviço contratado.</p>
+                <p>Os prazos para execução dos serviços serão definidos no momento da contratação e poderão variar conforme a complexidade e especificidades de cada projeto.</p>
+
+                <h2>6. Pagamentos</h2>
+                <p>Os valores dos serviços serão apresentados mediante orçamento personalizado, de acordo com as necessidades específicas de cada cliente.</p>
+                <p>As formas de pagamento aceitas e as condições específicas serão informadas no momento da contratação e formalizadas em contrato ou proposta comercial.</p>
+                <p>Em caso de atraso no pagamento, a IFNC Business poderá suspender a prestação dos serviços até a regularização, sem prejuízo da cobrança de juros e correção monetária conforme previsto em contrato.</p>
+
+                <h2>7. Responsabilidades do Cliente</h2>
+                <p>Ao contratar os serviços da IFNC Business, você concorda em:</p>
+                <ul>
+                    <li>Fornecer todas as informações necessárias para a execução do serviço contratado;</li>
+                    <li>Respeitar os prazos estabelecidos para aprovações e feedbacks durante o processo de desenvolvimento;</li>
+                    <li>Assegurar que todo o conteúdo fornecido para uso nos projetos (textos, imagens, vídeos, etc.) não viola direitos autorais ou de propriedade intelectual de terceiros;</li>
+                    <li>Utilizar os serviços em conformidade com a legislação aplicável e com estes Termos de Uso.</li>
+                </ul>
+
+                <h2>8. Limitação de Responsabilidade</h2>
+                <p>A IFNC Business empenha-se para fornecer serviços de alta qualidade, porém não pode garantir que o site ou os serviços funcionarão sem interrupções, atrasos ou imperfeições.</p>
+                <p>A IFNC Business não será responsável por danos indiretos, incidentais, especiais, punitivos ou consequentes resultantes do uso ou da impossibilidade de usar o site ou os serviços, incluindo, mas não se limitando a, perda de lucros, dados, oportunidades de negócios ou reputação.</p>
+                <p>A responsabilidade da IFNC Business, quando aplicável, limitar-se-á ao valor efetivamente pago pelo cliente pelo serviço específico que deu origem à reclamação.</p>
+
+                <h2>9. Confidencialidade</h2>
+                <p>A IFNC Business compromete-se a manter a confidencialidade das informações fornecidas pelos clientes durante a prestação dos serviços, utilizando-as exclusivamente para os fins contratados.</p>
+                <p>Informações sobre projetos desenvolvidos pela IFNC Business poderão ser utilizadas como portfolio, exceto quando houver acordo de confidencialidade específico estabelecido entre as partes.</p>
+
+                <h2>10. Uso do Site</h2>
+                <p>O usuário se compromete a fazer uso adequado dos conteúdos e da informação que a IFNC Business oferece no site e com caráter enunciativo, mas não limitativo:</p>
+                <ol type="a">
+                    <li>Não se envolver em atividades que sejam ilegais ou contrárias à boa fé e à ordem pública;</li>
+                    <li>Não difundir propaganda ou conteúdo de natureza racista, xenofóbica, jogos de azar ilegais, pornografia ilegal, apologia ao terrorismo ou atentatória contra os direitos humanos;</li>
+                    <li>Não causar danos aos sistemas físicos (hardware) e lógicos (software) da IFNC Business, de seus fornecedores ou terceiros, para introduzir ou disseminar vírus informáticos ou quaisquer outros sistemas de hardware ou software que sejam capazes de causar danos anteriormente mencionados.</li>
+                </ol>
+
+                <h2>11. Comunicações</h2>
+                <p>Ao fornecer seu e-mail, número de telefone ou outros dados de contato à IFNC Business, você concorda em receber comunicações eletrônicas relacionadas aos serviços contratados, bem como informações promocionais e newsletters, das quais poderá solicitar o cancelamento a qualquer momento.</p>
+
+                <h2>12. Links para Sites de Terceiros</h2>
+                <p>O site da IFNC Business pode conter links para outros sites que não são operados ou controlados pela empresa. A IFNC Business não se responsabiliza pelo conteúdo, políticas de privacidade ou práticas de sites de terceiros.</p>
+
+                <h2>13. Rescisão</h2>
+                <p>A IFNC Business poderá rescindir ou suspender seu acesso ao site ou aos serviços contratados, a qualquer momento e sem aviso prévio, por violação destes Termos de Uso ou das condições contratuais específicas de cada serviço.</p>
+                <p>As condições para rescisão dos serviços contratados serão estabelecidas nos contratos ou propostas comerciais específicas.</p>
+
+                <h2>14. Alterações dos Termos</h2>
+                <p>A IFNC Business reserva-se o direito de modificar estes Termos de Uso a qualquer momento, publicando a versão atualizada no site. As alterações entrarão em vigor imediatamente após sua publicação.</p>
+                <p>É responsabilidade do usuário verificar periodicamente se houve alterações nestes termos. O uso continuado do site após a publicação de alterações constitui aceitação das novas condições.</p>
+
+                <h2>15. Lei Aplicável e Resolução de Conflitos</h2>
+                <p>Estes Termos de Uso serão regidos e interpretados de acordo com as leis brasileiras.</p>
+                <p>Quaisquer disputas ou controvérsias decorrentes destes Termos ou relacionadas aos serviços da IFNC Business serão resolvidas preferencialmente por meio de negociação amigável. Não sendo possível, fica eleito o foro da comarca de Sorocaba, Estado de São Paulo, para dirimir quaisquer questões oriundas destes Termos, com renúncia expressa a qualquer outro, por mais privilegiado que seja.</p>
+
+                <h2>16. Disposições Finais</h2>
+                <p>Se qualquer disposição destes Termos de Uso for considerada inválida ou inexequível, as demais disposições permanecerão em pleno vigor e efeito.</p>
+                <p>A tolerância da IFNC Business em exigir o estrito cumprimento destes Termos não constitui novação ou renúncia, nem impede que o faça em momento posterior.</p>
+                <p>Estes Termos de Uso constituem o acordo integral entre você e a IFNC Business com relação ao uso do site, substituindo qualquer acordo anterior entre as partes relacionado ao mesmo assunto.</p>
+
+                <h2>17. Contato</h2>
+                <p>Em caso de dúvidas, sugestões ou problemas relacionados a estes Termos de Uso ou aos serviços oferecidos, entre em contato conosco através dos seguintes canais:</p>
+                <ul>
+                    <li>E-mail: contato@ifnc.com.br</li>
+                    <li>Telefone: (15) 99615-6506</li>
+                    <li>Endereço: Rua São Francisco, 7, Capela do Alto, SP - Brasil</li>
+                </ul>
+
+                <p class="terms-date">Estes Termos de Uso foram atualizados pela última vez em 5 de maio de 2025.</p>
+                <center>
+                    <a href="./index.html">
+                        <button class="button">Voltar</button>
+                    </a>
+            </div>
+    </div>
+    <footer class="dark-footer">
+        <div class="container-custom py-16">
+            <div class="footer-row">
+                <!-- IFNC Business -->
+                <div class="footer-col">
+                    <div class="flex items-center mb-6">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"
+                            class="icon-blue mr-2">
+                            <path
+                                d="m12 3-1.912 5.813a2 2 0 0 1-1.275 1.275L3 12l5.813 1.912a2 2 0 0 1 1.275 1.275L12 21l1.912-5.813a2 2 0 0 1 1.275-1.275L21 12l-5.813-1.912a2 2 0 0 1-1.275-1.275L12 3Z">
+                            </path>
+                            <path d="M5 3v4"></path>
+                            <path d="M19 17v4"></path>
+                            <path d="M3 5h4"></path>
+                            <path d="M17 19h4"></path>
+                        </svg>
+                        <span class="footer-brand-text">IFNC Business</span>
+                    </div>
+                    <p class="footer-text">
+                        Transformando negócios através do marketing digital com empatia, inovação e estratégia.
+                    </p>
+                    <div class="flex space-x-4">
+                        <a href="https://www.facebook.com/profile.php?id=100092462174879"
+                            class="text-snowWhite hover:text-blue transition-colors circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"></path>
+                            </svg>
+                        </a>
+                        <a href="https://www.instagram.com/ifncbusiness"
+                            class="text-snowWhite hover:text-blue transition-colors circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <rect width="20" height="20" x="2" y="2" rx="5" ry="5"></rect>
+                                <path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"></path>
+                                <line x1="17.5" x2="17.51" y1="6.5" y2="6.5"></line>
+                            </svg>
+                        </a>
+                        <a href="https://www.linkedin.com/in/fredericolc?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app"
+                            class="text-snowWhite hover:text-blue transition-colors circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6z">
+                                </path>
+                                <rect width="4" height="12" x="2" y="9"></rect>
+                                <circle cx="4" cy="4" r="2"></circle>
+                            </svg>
+                        </a>
+                        <a href="https://www.youtube.com/@FlickerVideo"
+                            class="text-snowWhite hover:text-blue transition-colors circle">
+                            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24"
+                                fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"
+                                stroke-linejoin="round">
+                                <path
+                                    d="M2.5 17a24.12 24.12 0 0 1 0-10 2 2 0 0 1 1.4-1.4 49.56 49.56 0 0 1 16.2 0A2 2 0 0 1 21.5 7a24.12 24.12 0 0 1 0 10 2 2 0 0 1-1.4 1.4 49.55 49.55 0 0 1-16.2 0A2 2 0 0 1 2.5 17">
+                                </path>
+                                <path d="m10 15 5-3-5-3z"></path>
+                            </svg>
+                        </a>
+                    </div>
+                </div>
+
+                <!-- Serviços -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Serviços</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#portfólio" class="social-icon">Criação de Marcas</a></li>
+                        <li><a href="#portfólio" class="social-icon">Desenvolvimento Web</a></li>
+                        <li><a href="#serviços" class="social-icon">Produção Audiovisual</a></li>
+                        <li><a href="#gestao" class="social-icon">Gestão de Tráfego</a></li>
+                        <li><a href="#ia" class="social-icon">Soluções em IA</a></li>
+                    </ul>
+                </div>
+
+                <!-- Links Úteis -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Links Úteis</h3>
+                    <ul class="space-y-3">
+                        <li><a href="#sobre" class="social-icon">Sobre Nós</a></li>
+                        <li><a href="#" class="social-icon">Blog</a></li>
+                        <li><a href="#sobre" class="social-icon">Carreiras</a></li>
+                        <li><a href="#serviços" class="social-icon">Parcerias</a></li>
+                        <li><a href="#portfólio" class="social-icon">Casos de Sucesso</a></li>
+                    </ul>
+                </div>
+
+                <!-- Newsletter -->
+                <div class="footer-col">
+                    <h3 class="footer-heading">Newsletter</h3>
+                    <p class="footer-text">
+                        Inscreva-se para receber nossas atualizações e conteúdos exclusivos.
+                    </p>
+                    <form class="newsletter-form">
+                        <input type="email" placeholder="Seu e-mail" class="newsletter-input" />
+                        <button type="submit" class="newsletter-btn">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+            </div>
+
+            <div class="border-t border-gray-700 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="footer-text text-sm mb-4 md:mb-0">
+                    &copy;
+                    <script>document.write(new Date().getFullYear())</script> IFNC Business. Todos os direitos
+                    reservados.
+                </p>
+                <div class="flex items-center">
+                    <a href="./termos-de-uso.html" class="social-icon text-sm mr-6">Termos de Uso</a>
+                    <a href="./politica-de-privacidade.html" class="social-icon text-sm mr-6">Política de
+                        Privacidade</a>
+                    <button onclick="window.scrollTo({top: 0, behavior: 'smooth'})" class="back-to-top-btn"
+                        aria-label="Voltar ao topo">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" fill="none"
+                            stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                            <path d="m18 15-6-6-6 6"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </footer>
+</body>
+
+</html>
