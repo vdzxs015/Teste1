@@ -939,7 +939,110 @@
      box-shadow: 0 10px 15px rgba(0, 0, 0, 0.3);
  }
 
+/* Loading Overlay Styles */
+.loading-overlay {
+    display: none; /* Inicialmente oculto, mudará para 'flex' quando necessário */
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(36, 39, 40, 0.9);
+    z-index: 1000;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 8px;
+}
 
+.loading-overlay p {
+    margin-top: 20px;
+    color: #fff;
+    font-size: 16px;
+}
+
+/* Spinner Animation */
+.spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid rgba(75, 171, 255, 0.3);
+    border-radius: 50%;
+    border-top-color: #4BABFF;
+    animation: spin 1s ease-in-out infinite;
+}
+
+@keyframes spin {
+    to {
+        transform: rotate(360deg);
+    }
+}
+
+/* Success Message Styles */
+.success-message {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(36, 39, 40, 0.9);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.success-message svg {
+    margin-bottom: 20px;
+}
+
+.success-message h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.success-message p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.success-message .btn-primary,
+.error-message .btn-primary {
+    margin-top: 20px;
+}
+
+/* Error Message Styles */
+.error-message {
+    display: none;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 40px 20px;
+    background-color: rgba(36, 39, 40, 0.9);
+    border-radius: 8px;
+    width: 100%;
+    height: 100%;
+}
+
+.error-message svg {
+    margin-bottom: 20px;
+}
+
+.error-message h3 {
+    font-size: 24px;
+    color: #fff;
+    margin-bottom: 15px;
+}
+
+.error-message p {
+    color: #aaa;
+    margin-bottom: 30px;
+}
+
+.contact-form-wrapper {
+    position: relative;
+}
  
  
  /* Section Styles */
