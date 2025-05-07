@@ -65,7 +65,7 @@ document.addEventListener('DOMContentLoaded', () => {
             // Mostrar overlay de loading (alterar visibilidade em vez de criar)
             loadingOverlay.style.display = 'flex';
             
-            const urlWebhook = 'http://host.docker.internal:5678/webhook-test/sla';        
+            const urlWebhook = 'http://host.docker.internal:5678/webhook/sla';        
             const dados = {
                 username: username.value,
                 email: email.value,
