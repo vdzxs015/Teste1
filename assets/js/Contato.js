@@ -1,6 +1,29 @@
+// Função para aplicar máscara no telefone
+const handlePhone = (event) => {
+    let input = event.target;
+    input.value = phoneMask(input.value);
+};
+
+const phoneMask = (value) => {
+    if (!value) return "";
+    value = value.replace(/\D/g, '');
+    value = value.replace(/(\d{2})(\d)/, "($1) $2");
+    value = value.replace(/(\d)(\d{4})$/, "$1-$2");
+    return value;
+};
+
+const cleanPhone = (value) => {
+    return value.replace(/\D/g, ''); // Remove todos os caracteres não numéricos
+};
+
 document.addEventListener('DOMContentLoaded', () => {
     const form = document.getElementById('contactForm');
     const formContainer = document.querySelector('.contact-form-wrapper');
+
+    const phone = document.getElementById('phone');
+    if (phone) {
+        phone.addEventListener('input', handlePhone);
+    }
 
     // Criar os elementos de overlay e mensagens apenas uma vez
     // Adicionar a overlay de loading ao HTML
@@ -62,6 +85,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
         // Validar inputs
         if (checkInputs()) {
+            // Limpar o valor do telefone antes de enviar
+            const cleanedPhone = cleanPhone(phone.value);
+
             // Mostrar overlay de loading (alterar visibilidade em vez de criar)
             loadingOverlay.style.display = 'flex';
             
@@ -69,7 +95,7 @@ document.addEventListener('DOMContentLoaded', () => {
             const dados = {
                 username: username.value,
                 email: email.value,
-                phone: phone.value,
+                phone: cleanedPhone, // Enviar o telefone limpo
                 company: company.value,
                 message: message.value
             };
